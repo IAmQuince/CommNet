@@ -1,0 +1,14 @@
+{
+  "checks": {
+    "run_auth_smoke.py": true,
+    "run_device_verification_smoke.py": true,
+    "run_hud_smoke.py": true,
+    "run_mail_smoke.py": true,
+    "run_permission_request_smoke.py": true,
+    "run_route_access_smoke.py": true,
+    "run_share_policy_smoke.py": true,
+    "run_ui_settings_smoke.py": true
+  },
+  "extra": {},
+  "status": "PASS"
+}

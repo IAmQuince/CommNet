@@ -1,0 +1,3 @@
+# Config Schema Report
+
+PASS

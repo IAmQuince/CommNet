@@ -1,0 +1,179 @@
+{
+  "schema": "cmn.install_profiles.v0",
+  "package": "20260508_00_BackboneReqs",
+  "profiles": [
+    {
+      "id": "minimal_local_demo",
+      "label": "Minimal Local Demo",
+      "audience": "first-run user",
+      "required_libraries": [
+        "python_stdlib",
+        "bottle"
+      ],
+      "optional_libraries": [
+        "waitress"
+      ],
+      "hardware_assumptions": [
+        "Windows PC with Python"
+      ],
+      "features": [
+        "admin UI",
+        "portal UI",
+        "loopback demo",
+        "simulated adapters"
+      ],
+      "fail_soft": [
+        "all hardware profiles"
+      ]
+    },
+    {
+      "id": "lan_wifi_node",
+      "label": "LAN/Wi-Fi Node",
+      "audience": "home, school, library, makerspace LAN",
+      "required_libraries": [
+        "python_stdlib",
+        "bottle",
+        "zeroconf"
+      ],
+      "optional_libraries": [
+        "waitress",
+        "websockets",
+        "psutil"
+      ],
+      "hardware_assumptions": [
+        "network adapter",
+        "local network access"
+      ],
+      "features": [
+        "manual peer entry",
+        "mDNS discovery",
+        "LAN HTTP transport"
+      ],
+      "fail_soft": [
+        "zeroconf discovery may degrade to manual peer entry"
+      ]
+    },
+    {
+      "id": "meshtastic_lora_node",
+      "label": "Meshtastic LoRa Node",
+      "audience": "LoRa radio deployment",
+      "required_libraries": [
+        "python_stdlib",
+        "bottle",
+        "meshtastic",
+        "pyserial"
+      ],
+      "optional_libraries": [
+        "paho-mqtt",
+        "bleak",
+        "waitress"
+      ],
+      "hardware_assumptions": [
+        "Meshtastic device over serial/TCP/BLE or MQTT bridge"
+      ],
+      "features": [
+        "LoRa alerts",
+        "short text",
+        "status",
+        "manifests",
+        "retrieval notices"
+      ],
+      "fail_soft": [
+        "UI launches if radio missing; adapter reports unavailable"
+      ]
+    },
+    {
+      "id": "reticulum_node",
+      "label": "Reticulum Node",
+      "audience": "resilient mesh/backbone deployment",
+      "required_libraries": [
+        "python_stdlib",
+        "bottle",
+        "rns",
+        "lxmf"
+      ],
+      "optional_libraries": [
+        "pyserial",
+        "waitress",
+        "psutil"
+      ],
+      "hardware_assumptions": [
+        "configured Reticulum interfaces"
+      ],
+      "features": [
+        "RNS transport",
+        "LXMF messaging",
+        "store-and-forward where configured"
+      ],
+      "fail_soft": [
+        "UI launches if RNS missing; adapter reports not_installed"
+      ]
+    },
+    {
+      "id": "full_experimental_node",
+      "label": "Full Experimental Node",
+      "audience": "advanced testbed",
+      "required_libraries": [
+        "python_stdlib",
+        "bottle",
+        "meshtastic",
+        "pyserial",
+        "paho-mqtt",
+        "rns",
+        "lxmf",
+        "zeroconf",
+        "bleak"
+      ],
+      "optional_libraries": [
+        "waitress",
+        "websockets",
+        "psutil",
+        "jsonschema",
+        "qrcode",
+        "pillow",
+        "watchdog"
+      ],
+      "hardware_assumptions": [
+        "mixed radios and LAN devices"
+      ],
+      "features": [
+        "all practical adapters",
+        "diagnostics",
+        "demo routing"
+      ],
+      "fail_soft": [
+        "each adapter independently degrades"
+      ]
+    },
+    {
+      "id": "developer_node",
+      "label": "Developer Node",
+      "audience": "code and audit contributor",
+      "required_libraries": [
+        "python_stdlib",
+        "pytest",
+        "ruff",
+        "jsonschema"
+      ],
+      "optional_libraries": [
+        "black",
+        "mypy",
+        "packaging",
+        "pip-tools",
+        "pyinstaller"
+      ],
+      "hardware_assumptions": [
+        "development workstation"
+      ],
+      "features": [
+        "tests",
+        "lint",
+        "audit",
+        "package checks"
+      ],
+      "fail_soft": [
+        "runtime UI does not require developer tools"
+      ]
+    }
+  ]
+}

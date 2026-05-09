@@ -1,0 +1,8 @@
+[
+  "text_message",
+  "emergency_alert",
+  "directory_update",
+  "device_status",
+  "route_probe",
+  "catena_serial_lora"
+]

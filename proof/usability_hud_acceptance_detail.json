@@ -1,0 +1,44 @@
+{
+  "results": {
+    "run_auth_smoke.py": {
+      "returncode": 0,
+      "stderr": "",
+      "stdout": "auth_smoke_report.json: PASS -> /mnt/data/work09/20260508_09_CommNetServiceTrayMesh/runtime/local/reports/auth_smoke_report.json\n"
+    },
+    "run_device_verification_smoke.py": {
+      "returncode": 0,
+      "stderr": "",
+      "stdout": "device_verification_report.json: PASS -> /mnt/data/work09/20260508_09_CommNetServiceTrayMesh/runtime/local/reports/device_verification_report.json\n"
+    },
+    "run_hud_smoke.py": {
+      "returncode": 0,
+      "stderr": "",
+      "stdout": "hud_acceptance_report.json: PASS -> /mnt/data/work09/20260508_09_CommNetServiceTrayMesh/runtime/local/reports/hud_acceptance_report.json\n"
+    },
+    "run_mail_smoke.py": {
+      "returncode": 0,
+      "stderr": "",
+      "stdout": "mail_smoke_report.json: PASS -> /mnt/data/work09/20260508_09_CommNetServiceTrayMesh/runtime/local/reports/mail_smoke_report.json\n"
+    },
+    "run_permission_request_smoke.py": {
+      "returncode": 0,
+      "stderr": "",
+      "stdout": "permission_request_report.json: PASS -> /mnt/data/work09/20260508_09_CommNetServiceTrayMesh/runtime/local/reports/permission_request_report.json\n"
+    },
+    "run_route_access_smoke.py": {
+      "returncode": 0,
+      "stderr": "",
+      "stdout": "access_matrix.json: PASS -> /mnt/data/work09/20260508_09_CommNetServiceTrayMesh/runtime/local/reports/access_matrix.json\n"
+    },
+    "run_share_policy_smoke.py": {
+      "returncode": 0,
+      "stderr": "",
+      "stdout": "share_policy_report.json: PASS -> /mnt/data/work09/20260508_09_CommNetServiceTrayMesh/runtime/local/reports/share_policy_report.json\n"
+    },
+    "run_ui_settings_smoke.py": {
+      "returncode": 0,
+      "stderr": "",
+      "stdout": "ui_settings_report.json: PASS -> /mnt/data/work09/20260508_09_CommNetServiceTrayMesh/runtime/local/reports/ui_settings_report.json\n"
+    }
+  }
+}

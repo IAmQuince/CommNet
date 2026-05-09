@@ -1,0 +1,12 @@
+{
+  "checks": {
+    "comment_created": true,
+    "icon_renders": true,
+    "post_created": true,
+    "profile_created": true
+  },
+  "extra": {
+    "post_id": "rwpost_ae381a4cffb6"
+  },
+  "status": "PASS"
+}

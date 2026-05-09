@@ -1,0 +1,13 @@
+{
+  "schema": "cmn.node_roles.v0",
+  "roles": [
+    "portal_node",
+    "admin_node",
+    "storage_node",
+    "gateway_node",
+    "peer_node",
+    "client_node",
+    "review_node",
+    "emergency_node"
+  ]
+}

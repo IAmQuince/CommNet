@@ -1,0 +1,25 @@
+{
+  "schema": "cmn.decisions.v0",
+  "decisions": [
+    {
+      "decision_id": "DEC-001",
+      "decision": "Use CMN project prefix for governed CommNet documents.",
+      "status": "accepted"
+    },
+    {
+      "decision_id": "DEC-002",
+      "decision": "Use PRECODE_BASELINE package class for this package.",
+      "status": "accepted"
+    },
+    {
+      "decision_id": "DEC-003",
+      "decision": "Keep product code out of this package except source boundary markers.",
+      "status": "accepted"
+    },
+    {
+      "decision_id": "DEC-004",
+      "decision": "Private/local-only/no-sharing/no-gateway is the default posture.",
+      "status": "accepted"
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "added_documents": [
+    "CMN-CONFIG-SPEC-001",
+    "CMN-CONFIG-SPEC-002",
+    "CMN-CONFIG-SPEC-003",
+    "CMN-CONFIG-SPEC-004",
+    "CMN-POLICY-SPEC-001",
+    "CMN-POLICY-SPEC-002",
+    "CMN-DEVICE-SPEC-001",
+    "CMN-FILES-SPEC-001",
+    "CMN-AUD-SPEC-003",
+    "CMN-RUN-STATUS-002",
+    "CMN-AUD-SPEC-004"
+  ],
+  "added_requirements": [
+    "CMN-REQ-CONFIG-001",
+    "CMN-REQ-CONFIG-002",
+    "CMN-REQ-CONFIG-003",
+    "CMN-REQ-CONFIG-004",
+    "CMN-REQ-CONFIG-005",
+    "CMN-REQ-PRIV-001",
+    "CMN-REQ-PRIV-002",
+    "CMN-REQ-SVC-001",
+    "CMN-REQ-SVC-002",
+    "CMN-REQ-DEV-001",
+    "CMN-REQ-FILE-001",
+    "CMN-REQ-AUD-001",
+    "CMN-REQ-DOC-001"
+  ],
+  "package": "20260508_03_Config"
+}

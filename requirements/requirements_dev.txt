@@ -1,0 +1,7 @@
+pytest
+ruff
+black
+mypy
+packaging
+pip-tools
+pyinstaller

@@ -1,0 +1,502 @@
+{
+  "catena_serial_lora": {
+    "status": "fake_serial_working_real_serial_configurable"
+  },
+  "documents": [
+    {
+      "document_id": "CMN-APP-SPEC-001",
+      "path": "docs/active/CMN-APP-SPEC-001_LocalShell_r0_WIP.md",
+      "status": "WIP",
+      "title": "Local Shell Specification"
+    },
+    {
+      "document_id": "CMN-APP-SPEC-002",
+      "path": "docs/active/CMN-APP-SPEC-002_Launchers_r0_WIP.md",
+      "status": "WIP",
+      "title": "Launcher Specification"
+    },
+    {
+      "document_id": "CMN-APP-SPEC-003",
+      "path": "docs/active/CMN-APP-SPEC-003_AdminPortal_r0_WIP.md",
+      "status": "WIP",
+      "title": "Admin Portal Shell"
+    },
+    {
+      "document_id": "CMN-APP-SPEC-004",
+      "path": "docs/active/CMN-APP-SPEC-004_CommPortal_r0_WIP.md",
+      "status": "WIP",
+      "title": "CommNet Portal Shell"
+    },
+    {
+      "document_id": "CMN-ARCH-NAR-001",
+      "path": "docs/active/CMN-ARCH-NAR-001_SystemNarrative_r0_WIP.md",
+      "status": "WIP",
+      "title": "System Narrative"
+    },
+    {
+      "document_id": "CMN-ARCH-SPEC-001",
+      "path": "docs/active/CMN-ARCH-SPEC-001_LocalFirstArch_r0_WIP.md",
+      "status": "WIP",
+      "title": "Local-First Architecture Specification"
+    },
+    {
+      "document_id": "CMN-ARCH-SPEC-002",
+      "path": "docs/active/CMN-ARCH-SPEC-002_NodeRoles_r0_WIP.md",
+      "status": "WIP",
+      "title": "Node Roles Specification"
+    },
+    {
+      "document_id": "CMN-ARCH-SPEC-003",
+      "path": "docs/active/CMN-ARCH-SPEC-003_ServiceModel_r0_WIP.md",
+      "status": "WIP",
+      "title": "Service Model Specification"
+    },
+    {
+      "document_id": "CMN-ARCH-SPEC-004",
+      "path": "docs/active/CMN-ARCH-SPEC-004_GatewayBoundary_r0_WIP.md",
+      "status": "WIP",
+      "title": "Gateway Boundary Specification"
+    },
+    {
+      "document_id": "CMN-ARCH-SPEC-005",
+      "path": "docs/active/CMN-ARCH-SPEC-005_HwSwAgnostic_r0_WIP.md",
+      "status": "WIP",
+      "title": "Hardware and Software Agnostic Model Specification"
+    },
+    {
+      "document_id": "CMN-AUD-SPEC-001",
+      "path": "docs/active/CMN-AUD-SPEC-001_PackageAudit_r0_WIP.md",
+      "status": "WIP",
+      "title": "Package Audit Specification"
+    },
+    {
+      "document_id": "CMN-AUD-SPEC-002",
+      "path": "docs/active/CMN-AUD-SPEC-002_AuditLogFields_r0_WIP.md",
+      "status": "WIP",
+      "title": "Audit Log Field Specification"
+    },
+    {
+      "document_id": "CMN-AUD-SPEC-003",
+      "path": "docs/active/CMN-AUD-SPEC-003_ConfigAudit_r0_WIP.md",
+      "status": "WIP",
+      "title": "Configuration Audit"
+    },
+    {
+      "document_id": "CMN-AUD-SPEC-004",
+      "path": "docs/active/CMN-AUD-SPEC-004_DocRetention_r0_WIP.md",
+      "status": "WIP",
+      "title": "Documentation Retention Audit"
+    },
+    {
+      "document_id": "CMN-CONFIG-SPEC-001",
+      "path": "docs/active/CMN-CONFIG-SPEC-001_ConfigModel_r0_WIP.md",
+      "status": "WIP",
+      "title": "Configuration Model"
+    },
+    {
+      "document_id": "CMN-CONFIG-SPEC-002",
+      "path": "docs/active/CMN-CONFIG-SPEC-002_FirstRunWizard_r0_WIP.md",
+      "status": "WIP",
+      "title": "First Run Wizard"
+    },
+    {
+      "document_id": "CMN-CONFIG-SPEC-003",
+      "path": "docs/active/CMN-CONFIG-SPEC-003_ConfigSnapshots_r0_WIP.md",
+      "status": "WIP",
+      "title": "Config Snapshots"
+    },
+    {
+      "document_id": "CMN-CONFIG-SPEC-004",
+      "path": "docs/active/CMN-CONFIG-SPEC-004_ConfigValidation_r0_WIP.md",
+      "status": "WIP",
+      "title": "Config Validation"
+    },
+    {
+      "document_id": "CMN-DATA-SPEC-001",
+      "path": "docs/active/CMN-DATA-SPEC-001_FileRegistry_r0_WIP.md",
+      "status": "WIP",
+      "title": "File Registry Specification"
+    },
+    {
+      "document_id": "CMN-DATA-SPEC-002",
+      "path": "docs/active/CMN-DATA-SPEC-002_MetadataModel_r0_WIP.md",
+      "status": "WIP",
+      "title": "Metadata Model Specification"
+    },
+    {
+      "document_id": "CMN-DATA-SPEC-003",
+      "path": "docs/active/CMN-DATA-SPEC-003_ConfigSnapshots_r0_WIP.md",
+      "status": "WIP",
+      "title": "Configuration Snapshot Specification"
+    },
+    {
+      "document_id": "CMN-DATA-SPEC-004",
+      "path": "docs/active/CMN-DATA-SPEC-004_EvidenceLog_r0_WIP.md",
+      "status": "WIP",
+      "title": "Evidence Log Specification"
+    },
+    {
+      "document_id": "CMN-DATA-SPEC-005",
+      "path": "docs/active/CMN-DATA-SPEC-005_BackupRestore_r0_WIP.md",
+      "status": "WIP",
+      "title": "Backup and Restore Specification"
+    },
+    {
+      "document_id": "CMN-DEVICE-SPEC-001",
+      "path": "docs/active/CMN-DEVICE-SPEC-001_DeviceRegistry_r0_WIP.md",
+      "status": "WIP",
+      "title": "Device Registry"
+    },
+    {
+      "document_id": "CMN-DIAG-SPEC-001",
+      "path": "docs/active/CMN-DIAG-SPEC-001_CommDiagnostics_r0_WIP.md",
+      "status": "WIP",
+      "title": "Communication Diagnostics Specification"
+    },
+    {
+      "document_id": "CMN-DIAG-SPEC-002",
+      "path": "docs/active/CMN-DIAG-SPEC-002_ShellDiagnostics_r0_WIP.md",
+      "status": "WIP",
+      "title": "Shell Diagnostics"
+    },
+    {
+      "document_id": "CMN-FILES-SPEC-001",
+      "path": "docs/active/CMN-FILES-SPEC-001_FileRoots_r0_WIP.md",
+      "status": "WIP",
+      "title": "File Roots"
+    },
+    {
+      "document_id": "CMN-GOV-GLO-001",
+      "path": "docs/active/CMN-GOV-GLO-001_Glossary_r0_WIP.md",
+      "status": "WIP",
+      "title": "Canonical Glossary"
+    },
+    {
+      "document_id": "CMN-GOV-REG-001",
+      "path": "docs/active/CMN-GOV-REG-001_Contradictions_r0_WIP.md",
+      "status": "WIP",
+      "title": "Contradiction and Reconciliation Register"
+    },
+    {
+      "document_id": "CMN-GOV-REG-002",
+      "path": "docs/active/CMN-GOV-REG-002_Duplications_r0_WIP.md",
+      "status": "WIP",
+      "title": "Duplication and Consolidation Register"
+    },
+    {
+      "document_id": "CMN-GOV-REG-003",
+      "path": "docs/active/CMN-GOV-REG-003_DocDebt_r0_WIP.md",
+      "status": "WIP",
+      "title": "Documentation Update Debt Register"
+    },
+    {
+      "document_id": "CMN-GOV-SOP-001",
+      "path": "docs/active/CMN-GOV-SOP-001_DocUpdateProcess_r0_WIP.md",
+      "status": "WIP",
+      "title": "Controlled Document Update Process"
+    },
+    {
+      "document_id": "CMN-GOV-STD-001",
+      "path": "docs/active/CMN-GOV-STD-001_DocControl_r0_WIP.md",
+      "status": "WIP",
+      "title": "Document Control Standard"
+    },
+    {
+      "document_id": "CMN-GOV-STD-002",
+      "path": "docs/active/CMN-GOV-STD-002_TermsUse_r0_WIP.md",
+      "status": "WIP",
+      "title": "Semantic Precedence and Term Usage Standard"
+    },
+    {
+      "document_id": "CMN-GOV-STD-003",
+      "path": "docs/active/CMN-GOV-STD-003_PackageStructure_r0_WIP.md",
+      "status": "WIP",
+      "title": "Active Archive and Package Structure Standard"
+    },
+    {
+      "document_id": "CMN-IMP-PLAN-001",
+      "path": "docs/active/CMN-IMP-PLAN-001_NextCodingGate_r0_WIP.md",
+      "status": "WIP",
+      "title": "Implementation Transition and Coding Gate Plan"
+    },
+    {
+      "document_id": "CMN-INST-SPEC-001",
+      "path": "docs/active/CMN-INST-SPEC-001_OfflineWheelhouse_r0_WIP.md",
+      "status": "WIP",
+      "title": "Offline Wheelhouse Specification"
+    },
+    {
+      "document_id": "CMN-MOD-SPEC-001",
+      "path": "docs/active/CMN-MOD-SPEC-001_ModerationAppeals_r0_WIP.md",
+      "status": "WIP",
+      "title": "Moderation and Appeals Specification"
+    },
+    {
+      "document_id": "CMN-NET-SPEC-001",
+      "path": "docs/active/CMN-NET-SPEC-001_TransportAbstraction_r0_WIP.md",
+      "status": "WIP",
+      "title": "Transport Abstraction Specification"
+    },
+    {
+      "document_id": "CMN-NET-SPEC-002",
+      "path": "docs/active/CMN-NET-SPEC-002_DeviceOnboarding_r0_WIP.md",
+      "status": "WIP",
+      "title": "Device Onboarding Specification"
+    },
+    {
+      "document_id": "CMN-NET-SPEC-003",
+      "path": "docs/active/CMN-NET-SPEC-003_BackboneProviders_r0_WIP.md",
+      "status": "WIP",
+      "title": "Backbone Provider Specification"
+    },
+    {
+      "document_id": "CMN-NET-SPEC-004",
+      "path": "docs/active/CMN-NET-SPEC-004_MeshtasticAdapter_r0_WIP.md",
+      "status": "WIP",
+      "title": "Meshtastic Adapter Specification"
+    },
+    {
+      "document_id": "CMN-NET-SPEC-005",
+      "path": "docs/active/CMN-NET-SPEC-005_ReticulumAdapter_r0_WIP.md",
+      "status": "WIP",
+      "title": "Reticulum and LXMF Adapter Specification"
+    },
+    {
+      "document_id": "CMN-NET-SPEC-006",
+      "path": "docs/active/CMN-NET-SPEC-006_LanWifiAdapter_r0_WIP.md",
+      "status": "WIP",
+      "title": "LAN and Wi-Fi Adapter Specification"
+    },
+    {
+      "document_id": "CMN-NET-SPEC-007",
+      "path": "docs/active/CMN-NET-SPEC-007_BluetoothAdapter_r0_WIP.md",
+      "status": "WIP",
+      "title": "Bluetooth Adapter Specification"
+    },
+    {
+      "document_id": "CMN-NET-SPEC-008",
+      "path": "docs/active/CMN-NET-SPEC-008_StorageMuleModel_r0_WIP.md",
+      "status": "WIP",
+      "title": "Storage Node and Data Mule Model"
+    },
+    {
+      "document_id": "CMN-POLICY-SPEC-001",
+      "path": "docs/active/CMN-POLICY-SPEC-001_PrivacyGate_r0_WIP.md",
+      "status": "WIP",
+      "title": "Privacy Gate"
+    },
+    {
+      "document_id": "CMN-POLICY-SPEC-002",
+      "path": "docs/active/CMN-POLICY-SPEC-002_ServiceVisibility_r0_WIP.md",
+      "status": "WIP",
+      "title": "Service Visibility"
+    },
+    {
+      "document_id": "CMN-PRV-SPEC-001",
+      "path": "docs/active/CMN-PRV-SPEC-001_PrivacyVisibility_r0_WIP.md",
+      "status": "WIP",
+      "title": "Privacy and Visibility Specification"
+    },
+    {
+      "document_id": "CMN-PRV-SPEC-002",
+      "path": "docs/active/CMN-PRV-SPEC-002_SharingPolicies_r0_WIP.md",
+      "status": "WIP",
+      "title": "Sharing Policy Specification"
+    },
+    {
+      "document_id": "CMN-REL-SPEC-001",
+      "path": "docs/active/CMN-REL-SPEC-001_ReleasePackageSpec_r0_WIP.md",
+      "status": "WIP",
+      "title": "Release Package Composition and Baseline Specification"
+    },
+    {
+      "document_id": "CMN-REQ-MAT-001",
+      "path": "docs/active/CMN-REQ-MAT-001_TraceMatrix_r0_WIP.md",
+      "status": "WIP",
+      "title": "Requirements Traceability Matrix"
+    },
+    {
+      "document_id": "CMN-RISK-REG-001",
+      "path": "docs/active/CMN-RISK-REG-001_Risks_r0_WIP.md",
+      "status": "WIP",
+      "title": "Risk and Mitigation Register"
+    },
+    {
+      "document_id": "CMN-RUN-STATUS-001",
+      "path": "docs/active/CMN-RUN-STATUS-001_ShellStatus_r0_WIP.md",
+      "status": "WIP",
+      "title": "Shell Run Status"
+    },
+    {
+      "document_id": "CMN-RUN-STATUS-002",
+      "path": "docs/active/CMN-RUN-STATUS-002_ConfigStatus_r0_WIP.md",
+      "status": "WIP",
+      "title": "Configuration Run Status"
+    },
+    {
+      "document_id": "CMN-SCM-STD-001",
+      "path": "docs/active/CMN-SCM-STD-001_CodePackageControl_r0_WIP.md",
+      "status": "WIP",
+      "title": "Code and Package Version Control Scheme"
+    },
+    {
+      "document_id": "CMN-SEC-BASE-001",
+      "path": "docs/active/CMN-SEC-BASE-001_TrustBoundary_r0_WIP.md",
+      "status": "WIP",
+      "title": "Security and Trust Boundary Baseline"
+    },
+    {
+      "document_id": "CMN-SEC-SPEC-001",
+      "path": "docs/active/CMN-SEC-SPEC-001_RolesPerms_r0_WIP.md",
+      "status": "WIP",
+      "title": "Roles Permissions and Authorization Specification"
+    },
+    {
+      "document_id": "CMN-SEC-SPEC-002",
+      "path": "docs/active/CMN-SEC-SPEC-002_DeviceTrust_r0_WIP.md",
+      "status": "WIP",
+      "title": "Device Trust Specification"
+    },
+    {
+      "document_id": "CMN-SEC-SPEC-003",
+      "path": "docs/active/CMN-SEC-SPEC-003_KeyIdentity_r0_WIP.md",
+      "status": "WIP",
+      "title": "Key Identity and Recovery Specification"
+    },
+    {
+      "document_id": "CMN-SW-REQ-001",
+      "path": "docs/active/CMN-SW-REQ-001_DependencyStrategy_r0_WIP.md",
+      "status": "WIP",
+      "title": "Software Dependency Strategy"
+    },
+    {
+      "document_id": "CMN-SW-REQ-002",
+      "path": "docs/active/CMN-SW-REQ-002_InstallProfiles_r0_WIP.md",
+      "status": "WIP",
+      "title": "Install Profile Requirements"
+    },
+    {
+      "document_id": "CMN-SYNC-SPEC-001",
+      "path": "docs/active/CMN-SYNC-SPEC-001_ReplicationCache_r0_WIP.md",
+      "status": "WIP",
+      "title": "Replication and Cache Specification"
+    },
+    {
+      "document_id": "CMN-TRANS-SPEC-001",
+      "path": "docs/active/CMN-TRANS-SPEC-001_AdapterAPI_r0_WIP.md",
+      "status": "WIP",
+      "title": "Transport Adapter API Specification"
+    },
+    {
+      "document_id": "CMN-TRANS-SPEC-002",
+      "path": "docs/active/CMN-TRANS-SPEC-002_RoutePlanner_r0_WIP.md",
+      "status": "WIP",
+      "title": "Route Planner Specification"
+    },
+    {
+      "document_id": "CMN-TRANS-SPEC-003",
+      "path": "docs/active/CMN-TRANS-SPEC-003_ResourceLimits_r0_WIP.md",
+      "status": "WIP",
+      "title": "Communication Resource Limits"
+    },
+    {
+      "document_id": "CMN-TRANS-SPEC-004",
+      "path": "docs/active/CMN-TRANS-SPEC-004_MessageClasses_r0_WIP.md",
+      "status": "WIP",
+      "title": "Message and Payload Classes"
+    },
+    {
+      "document_id": "CMN-TRANS-SPEC-005",
+      "path": "docs/active/CMN-TRANS-SPEC-005_ShellTransportSkeleton_r0_WIP.md",
+      "status": "WIP",
+      "title": "Shell Transport Skeleton"
+    },
+    {
+      "document_id": "CMN-UI-ARCH-001",
+      "path": "docs/active/CMN-UI-ARCH-001_UIArchitecture_r0_WIP.md",
+      "status": "WIP",
+      "title": "UI Functional Architecture"
+    },
+    {
+      "document_id": "CMN-UI-SPEC-001",
+      "path": "docs/active/CMN-UI-SPEC-001_OnboardingTools_r0_WIP.md",
+      "status": "WIP",
+      "title": "Onboarding Tools Specification"
+    },
+    {
+      "document_id": "CMN-UI-SPEC-002",
+      "path": "docs/active/CMN-UI-SPEC-002_LauncherShell_r0_WIP.md",
+      "status": "WIP",
+      "title": "Launcher Shell Specification"
+    },
+    {
+      "document_id": "CMN-UI-SPEC-003",
+      "path": "docs/active/CMN-UI-SPEC-003_ConfigPlatform_r0_WIP.md",
+      "status": "WIP",
+      "title": "Configuration Platform Specification"
+    },
+    {
+      "document_id": "CMN-UI-SPEC-004",
+      "path": "docs/active/CMN-UI-SPEC-004_PortalEntry_r0_WIP.md",
+      "status": "WIP",
+      "title": "Community Web Portal Entry Specification"
+    },
+    {
+      "document_id": "CMN-UI-SPEC-005",
+      "path": "docs/active/CMN-UI-SPEC-005_DiagnosticsUX_r0_WIP.md",
+      "status": "WIP",
+      "title": "Diagnostics UX Specification"
+    },
+    {
+      "document_id": "CMN-UI-SPEC-006",
+      "path": "docs/active/CMN-UI-SPEC-006_ProfilePresets_r0_WIP.md",
+      "status": "WIP",
+      "title": "Profile Presets Specification"
+    },
+    {
+      "document_id": "CMN-UX-SPEC-004",
+      "path": "docs/active/CMN-UX-SPEC-004_AdminHUD_r0_WIP.md",
+      "status": "WIP",
+      "title": "Admin HUD Usability Specification"
+    },
+    {
+      "document_id": "CMN-UI-SPEC-007",
+      "path": "docs/active/CMN-UI-SPEC-007_DisplaySettings_r0_WIP.md",
+      "status": "WIP",
+      "title": "Display Settings Specification"
+    },
+    {
+      "document_id": "CMN-AUTH-SPEC-001",
+      "path": "docs/active/CMN-AUTH-SPEC-001_LocalAccounts_r0_WIP.md",
+      "status": "WIP",
+      "title": "Local Accounts Specification"
+    },
+    {
+      "document_id": "CMN-PERM-SPEC-001",
+      "path": "docs/active/CMN-PERM-SPEC-001_PermissionRequests_r0_WIP.md",
+      "status": "WIP",
+      "title": "Permission Requests Specification"
+    },
+    {
+      "document_id": "CMN-MAIL-SPEC-001",
+      "path": "docs/active/CMN-MAIL-SPEC-001_InternalMail_r0_WIP.md",
+      "status": "WIP",
+      "title": "Internal CommNet Mail Specification"
+    },
+    {
+      "document_id": "CMN-SHARE-SPEC-006",
+      "path": "docs/active/CMN-SHARE-SPEC-006_SharePreviewPolicy_r0_WIP.md",
+      "status": "WIP",
+      "title": "Share Preview Policy Specification"
+    },
+    {
+      "document_id": "CMN-DEV-SPEC-002",
+      "path": "docs/active/CMN-DEV-SPEC-002_DeviceVerificationUX_r0_WIP.md",
+      "status": "WIP",
+      "title": "Device Verification UX Specification"
+    }
+  ],
+  "netux_catena_added": true,
+  "package": "20260508_03_Config",
+  "package_class": "USABILITY_HUD_READY_WITH_DEBT"
+}

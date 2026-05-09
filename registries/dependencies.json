@@ -1,0 +1,31 @@
+{
+  "catena_serial_lora": {
+    "status": "fake_serial_working_real_serial_configurable"
+  },
+  "core_runtime": {
+    "policy": "stdlib only for shell",
+    "required_external": []
+  },
+  "netux_catena_added": true,
+  "package": "20260508_02_Shell",
+  "profiles": {
+    "bluetooth_node": [
+      "bleak"
+    ],
+    "lan_wifi_node": [
+      "zeroconf"
+    ],
+    "meshtastic_lora_node": [
+      "meshtastic",
+      "pyserial",
+      "paho-mqtt"
+    ],
+    "minimal_local_demo": [],
+    "reticulum_node": [
+      "rns",
+      "lxmf",
+      "pyserial"
+    ]
+  },
+  "vendored": []
+}

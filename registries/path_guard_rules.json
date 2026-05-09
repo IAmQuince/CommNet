@@ -1,0 +1,9 @@
+{
+  "rules": [
+    "resolve paths",
+    "block traversal",
+    "verify containment",
+    "hide physical visitor paths",
+    "block package/runtime sharing"
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "catena_serial_lora": {
+    "status": "fake_serial_working_real_serial_configurable"
+  },
+  "netux_catena_added": true,
+  "schema": "cmn.service_catalog.v0",
+  "services": [
+    {
+      "default_state": "off_until_configured",
+      "service_id": "portal"
+    },
+    {
+      "default_state": "local_admin_only",
+      "service_id": "admin_console"
+    },
+    {
+      "default_state": "private",
+      "service_id": "file_registry"
+    },
+    {
+      "default_state": "private",
+      "service_id": "directory"
+    },
+    {
+      "default_state": "private",
+      "service_id": "search"
+    },
+    {
+      "default_state": "off",
+      "service_id": "forum"
+    },
+    {
+      "default_state": "off",
+      "service_id": "wiki_pages"
+    },
+    {
+      "default_state": "off",
+      "service_id": "media_library"
+    },
+    {
+      "default_state": "admin_only",
+      "service_id": "diagnostics"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "checks": {
+    "download_blocked_in_preview_mode": true,
+    "download_enabled_after_policy_update": true,
+    "list_works": true,
+    "preview_text": true,
+    "share_created": true
+  },
+  "extra": {
+    "share_id": "share_e4c3115def14"
+  },
+  "status": "PASS"
+}

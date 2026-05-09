@@ -1,0 +1,19 @@
+{
+  "controlled_by": "CMN-CONFIG-SPEC-001",
+  "default_visibility": "private_local_only",
+  "fields": [
+    "node_name",
+    "deployment_profile",
+    "node_role",
+    "privacy_mode",
+    "visibility_mode",
+    "admin_display_name",
+    "location_label",
+    "node_description",
+    "desired_transport_profiles",
+    "services",
+    "personal_site"
+  ],
+  "schema_version": 2,
+  "source": "src/commnet/core/config_schema.py"
+}

@@ -1,0 +1,7 @@
+{
+  "adapters": [
+    "catena_serial_lora",
+    "generic_serial_lora",
+    "fake_catena_serial"
+  ]
+}

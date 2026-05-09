@@ -1,0 +1,4 @@
+{
+  "default_required": true,
+  "note": "basic LAN visitor gate, not production authentication"
+}

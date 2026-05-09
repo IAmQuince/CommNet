@@ -1,0 +1,20 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+
+# Runtime state must not be committed
+runtime/*
+!runtime/.gitkeep
+!runtime/README.md
+
+# Local/generated OS clutter
+.DS_Store
+Thumbs.db
+
+# Local archives
+*.zip

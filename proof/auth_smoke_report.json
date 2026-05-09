@@ -1,0 +1,13 @@
+{
+  "checks": {
+    "authenticated": true,
+    "created": true,
+    "role_guest": true,
+    "session_lookup": true
+  },
+  "extra": {
+    "user_id": "user_ddb98e9730d7",
+    "username": "smoke_c13a2c0a"
+  },
+  "status": "PASS"
+}

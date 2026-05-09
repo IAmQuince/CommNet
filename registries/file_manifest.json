@@ -1,0 +1,512 @@
+{
+  "schema": "cmn.file_manifest.v0",
+  "package": "20260508_00_CommNetPrecode",
+  "file_count": 101,
+  "files": [
+    {
+      "path": ".gitignore",
+      "size_bytes": 246,
+      "sha256": "bfe5e084469eae528f33eaeaad2c66565d2832d8a5117069cc5db82cf37db479"
+    },
+    {
+      "path": ".pre-commit-config.yaml",
+      "size_bytes": 202,
+      "sha256": "1f0c974b7f3f19de0bcf2d2ca44816026c72e4f49646b876227f53a2106f8962"
+    },
+    {
+      "path": "CODEOWNERS",
+      "size_bytes": 23,
+      "sha256": "ecc64f348df0120f326e548da573bcd50dd1fe6131b1f8b46e129c5c7ff67ab4"
+    },
+    {
+      "path": "CONTRIBUTING.md",
+      "size_bytes": 614,
+      "sha256": "6f048df74ea34ae6d265a8f1e630a02fdf011bd92321d59f234ce9b92c28082c"
+    },
+    {
+      "path": "README.md",
+      "size_bytes": 1487,
+      "sha256": "aa4e5050230a880b8f9da2c19ef49e8e1bdfd8da969b9f553735b1d34184a861"
+    },
+    {
+      "path": "RELEASE_MANIFEST.md",
+      "size_bytes": 628,
+      "sha256": "186073319fe08c802b0d4d59fc5fd4874cd8f6c71edc08b51b43b48fb50c18b0"
+    },
+    {
+      "path": "RELEASE_NOTES.md",
+      "size_bytes": 698,
+      "sha256": "b16ee270a2411f0f8f4178ed49bfcbfa6454110edf42dd404f9f32c183158d42"
+    },
+    {
+      "path": "Run_Audit.cmd",
+      "size_bytes": 211,
+      "sha256": "3620b18600f41d0196252966863575aa0dc9924145906494aad4f903e351bf63"
+    },
+    {
+      "path": "audit_reports/active/doc_control_report.md",
+      "size_bytes": 3709,
+      "sha256": "27a1757c2cf00e469a5825a1a37b37f33aff308e75d0c8e10d1b2e2cc97c476e"
+    },
+    {
+      "path": "audit_reports/active/overclaim_scan.md",
+      "size_bytes": 83,
+      "sha256": "50cf6cd8da946b68d2a58ca5d256c87d1eb88b7a59ad2b3c9ca1c449a29d69e7"
+    },
+    {
+      "path": "audit_reports/active/package_audit.md",
+      "size_bytes": 1156,
+      "sha256": "fef6301f81c7859f5576bba057dc677ec82aa5f3185d3ad02c8ffc3168d1a93c"
+    },
+    {
+      "path": "audit_reports/active/package_shape_report.md",
+      "size_bytes": 653,
+      "sha256": "8cdfa3f5e0d72dff8892fbb70b4fb826919932000ce00dd58eea75d286c13f20"
+    },
+    {
+      "path": "audit_reports/active/path_length_report.md",
+      "size_bytes": 333,
+      "sha256": "7a0e0b1ee764676398f4c7c67cba7fd56cc5234a9a8a07e64c3c5a80af49dc53"
+    },
+    {
+      "path": "audit_reports/active/placeholder_scan.md",
+      "size_bytes": 88,
+      "sha256": "2dae5d4394f1f92197f1e84cbbd810fa9fb69a4dffa170383c4893172fc5e621"
+    },
+    {
+      "path": "audit_reports/active/registry_sync_report.md",
+      "size_bytes": 155,
+      "sha256": "211601e9cafde1664bb4f9c31773171aaf78cb545a31347c06632b2a8d5485f8"
+    },
+    {
+      "path": "audit_reports/active/traceability_report.md",
+      "size_bytes": 84,
+      "sha256": "9082b5c0414a62e16e6ec9f4804ce33562980e8daa38eb8a0d141256b9054dfc"
+    },
+    {
+      "path": "audit_reports/active/tree_report.txt",
+      "size_bytes": 4048,
+      "sha256": "0df0fbc4d34c68e0b30ec565593511fc2e1555f6bd1445ab2875e8de0f14c05d"
+    },
+    {
+      "path": "audit_reports/archive/.gitkeep",
+      "size_bytes": 1,
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+    },
+    {
+      "path": "docs/active/CMN-ARCH-NAR-001_SystemNarrative_r0_WIP.md",
+      "size_bytes": 1958,
+      "sha256": "a30d5ff7db1e9fa8f1f772eaa461706e63391c87ad1afd2462531d9cba3f31c1"
+    },
+    {
+      "path": "docs/active/CMN-ARCH-SPEC-001_LocalFirstArch_r0_WIP.md",
+      "size_bytes": 1659,
+      "sha256": "a5fccc2cbbc8202f0cb03b0eeb5e7d072574784003907841d1ab0263d20bca13"
+    },
+    {
+      "path": "docs/active/CMN-ARCH-SPEC-002_NodeRoles_r0_WIP.md",
+      "size_bytes": 1591,
+      "sha256": "071a3d35977e91689331b46781a3368be8108247cfa9a33fb5a6c63d5bd7044f"
+    },
+    {
+      "path": "docs/active/CMN-ARCH-SPEC-003_ServiceModel_r0_WIP.md",
+      "size_bytes": 1617,
+      "sha256": "481eedb5b67312b2d7be61bea90ec7044a256a9c7434ad362c0d8c429f7db026"
+    },
+    {
+      "path": "docs/active/CMN-ARCH-SPEC-004_GatewayBoundary_r0_WIP.md",
+      "size_bytes": 1447,
+      "sha256": "656975088abed6a64364bb7caf7901a8b890890b2732d624864a3a93c54f76fc"
+    },
+    {
+      "path": "docs/active/CMN-ARCH-SPEC-005_HwSwAgnostic_r0_WIP.md",
+      "size_bytes": 1486,
+      "sha256": "45de7fc4507442b180c2df33ce74dfb8d1d44be810ecbabd6b1e2738f9d8dc93"
+    },
+    {
+      "path": "docs/active/CMN-AUD-SPEC-001_PackageAudit_r0_WIP.md",
+      "size_bytes": 1274,
+      "sha256": "aeae5238e0eff2eff63a4d0d69c8c923035f4f973956d89b3844c4315ddb6467"
+    },
+    {
+      "path": "docs/active/CMN-AUD-SPEC-002_AuditLogFields_r0_WIP.md",
+      "size_bytes": 1689,
+      "sha256": "bafd652a1885e119c1c967bd3b343c030d514b0b744be787114eff107ec23759"
+    },
+    {
+      "path": "docs/active/CMN-DATA-SPEC-001_FileRegistry_r0_WIP.md",
+      "size_bytes": 1595,
+      "sha256": "3999d2e3804319c63e3be2fec36eb051da8d1437ba3399165f03886c648881da"
+    },
+    {
+      "path": "docs/active/CMN-DATA-SPEC-002_MetadataModel_r0_WIP.md",
+      "size_bytes": 1190,
+      "sha256": "9528805151d20519e37789dd75f59690abd95b365d1208be577ba6b93037116a"
+    },
+    {
+      "path": "docs/active/CMN-DATA-SPEC-003_ConfigSnapshots_r0_WIP.md",
+      "size_bytes": 1288,
+      "sha256": "d7b54fc30bde53756f2c208436cc86e6d45fd5810125b4419d112d1b54272614"
+    },
+    {
+      "path": "docs/active/CMN-DATA-SPEC-004_EvidenceLog_r0_WIP.md",
+      "size_bytes": 1311,
+      "sha256": "4356520f6779a630178e4f63ed33cf3fd1c425e24ccbeb82106ed9cb2d1a8514"
+    },
+    {
+      "path": "docs/active/CMN-DATA-SPEC-005_BackupRestore_r0_WIP.md",
+      "size_bytes": 1284,
+      "sha256": "c5031d364070dbb1b51761b61452416674169b5418521697da37c61ea832f783"
+    },
+    {
+      "path": "docs/active/CMN-GOV-GLO-001_Glossary_r0_WIP.md",
+      "size_bytes": 1904,
+      "sha256": "66afc5d0c57f9a17617abb7ea4295687146b110d6d1faa125e6c6ce18c7a6a8f"
+    },
+    {
+      "path": "docs/active/CMN-GOV-REG-001_Contradictions_r0_WIP.md",
+      "size_bytes": 1641,
+      "sha256": "2fb93dc210c4bd088fbe226da6b65378b1c24a7ede94ddcb4b421f5254521818"
+    },
+    {
+      "path": "docs/active/CMN-GOV-REG-002_Duplications_r0_WIP.md",
+      "size_bytes": 1215,
+      "sha256": "05731a54f789ac0a35660661762755314cc37c5300ffbaf5c3d16d85d65b79ae"
+    },
+    {
+      "path": "docs/active/CMN-GOV-REG-003_DocDebt_r0_WIP.md",
+      "size_bytes": 1487,
+      "sha256": "844b07ddc13a33245036df36000ccb696c3b04004a0be8fbb2306bf18a268c86"
+    },
+    {
+      "path": "docs/active/CMN-GOV-SOP-001_DocUpdateProcess_r0_WIP.md",
+      "size_bytes": 1291,
+      "sha256": "25168433b58e41d93dc9f4f9d97b8271e77530320ea4e69fc5e2740adaf91972"
+    },
+    {
+      "path": "docs/active/CMN-GOV-STD-001_DocControl_r0_WIP.md",
+      "size_bytes": 3085,
+      "sha256": "305707ea75340b6e4bb54cd91d998f9748a7ba7c183d9e299376f895936751d8"
+    },
+    {
+      "path": "docs/active/CMN-GOV-STD-002_TermsUse_r0_WIP.md",
+      "size_bytes": 2196,
+      "sha256": "97fdc8b3874607b23e282bdf4835b8d956fe72073dabf4514877141f5951ce43"
+    },
+    {
+      "path": "docs/active/CMN-GOV-STD-003_PackageStructure_r0_WIP.md",
+      "size_bytes": 1677,
+      "sha256": "4e171af05e5a373f531c6ff9824925c2bd02d434837c650eff8c74f72928389e"
+    },
+    {
+      "path": "docs/active/CMN-IMP-PLAN-001_NextCodingGate_r0_WIP.md",
+      "size_bytes": 1612,
+      "sha256": "da8233125ef9b0d0e770089c8d4890f205ab4b31510f876295866bcfc2ca249f"
+    },
+    {
+      "path": "docs/active/CMN-MOD-SPEC-001_ModerationAppeals_r0_WIP.md",
+      "size_bytes": 1348,
+      "sha256": "9d70db94822f5cc5ccc977eb503269aaea6bce4bd477fa66de5adb4b866ca76c"
+    },
+    {
+      "path": "docs/active/CMN-NET-SPEC-001_TransportAbstraction_r0_WIP.md",
+      "size_bytes": 1347,
+      "sha256": "43cd999a2a64cda8d7e41c9bc0056103a70a8d19262b7cf900139fac0498c2ac"
+    },
+    {
+      "path": "docs/active/CMN-NET-SPEC-002_DeviceOnboarding_r0_WIP.md",
+      "size_bytes": 1141,
+      "sha256": "41b87f3f159b16261b8fe787ba0363211eca6a205146fc5299803f819552d1fd"
+    },
+    {
+      "path": "docs/active/CMN-PRV-SPEC-001_PrivacyVisibility_r0_WIP.md",
+      "size_bytes": 1303,
+      "sha256": "64b549f5072acf76cd76954114ea725260b081d4b1a2a55de172e400c184bdd9"
+    },
+    {
+      "path": "docs/active/CMN-PRV-SPEC-002_SharingPolicies_r0_WIP.md",
+      "size_bytes": 1304,
+      "sha256": "52ef9adabc7c618a12309c7dcd382c1beda87d34df380e7a98e41012c20419fb"
+    },
+    {
+      "path": "docs/active/CMN-REL-SPEC-001_ReleasePackageSpec_r0_WIP.md",
+      "size_bytes": 1771,
+      "sha256": "039bd31c1f1e780c0f064d8fac2ea7afe2c18268595c2261786358b6e403386c"
+    },
+    {
+      "path": "docs/active/CMN-REQ-MAT-001_TraceMatrix_r0_WIP.md",
+      "size_bytes": 12684,
+      "sha256": "16832ce5c6dcd2e6d0c70eb354c1fb50c9f060fefa401411cc5ff55e04864a57"
+    },
+    {
+      "path": "docs/active/CMN-RISK-REG-001_Risks_r0_WIP.md",
+      "size_bytes": 5030,
+      "sha256": "1f438d21da90a451c88700db39627a90a1679b6342c0e2760a81d2db509ae0cc"
+    },
+    {
+      "path": "docs/active/CMN-SCM-STD-001_CodePackageControl_r0_WIP.md",
+      "size_bytes": 1587,
+      "sha256": "5f2db6493071a76ca476d947ff92ab330b46761f6d72107bb9dbb41a946fca38"
+    },
+    {
+      "path": "docs/active/CMN-SEC-BASE-001_TrustBoundary_r0_WIP.md",
+      "size_bytes": 1569,
+      "sha256": "fad5949e95662a1feca0d87228a1866ea98a340b91d0271f1c2400ad353dd095"
+    },
+    {
+      "path": "docs/active/CMN-SEC-SPEC-001_RolesPerms_r0_WIP.md",
+      "size_bytes": 1871,
+      "sha256": "5812f5e9620af649811d5a5b785a83667ec0d0734230bae510309ca18ba7c955"
+    },
+    {
+      "path": "docs/active/CMN-SEC-SPEC-002_DeviceTrust_r0_WIP.md",
+      "size_bytes": 1222,
+      "sha256": "6cfeaa0191b9be420b6d069d4f90e8759cfb2f4b8a8a4b6f57260e48ab1a7254"
+    },
+    {
+      "path": "docs/active/CMN-SEC-SPEC-003_KeyIdentity_r0_WIP.md",
+      "size_bytes": 1208,
+      "sha256": "ef590fb7c796f313bbcc35b11eb2f5e2cf029b10748d1cfafff1ce7f1ec1cdde"
+    },
+    {
+      "path": "docs/active/CMN-SYNC-SPEC-001_ReplicationCache_r0_WIP.md",
+      "size_bytes": 1259,
+      "sha256": "d0ce3888d0f1c09176ae17188bc4e7b6affd8db2a368a456c63b71614a8432cd"
+    },
+    {
+      "path": "docs/active/CMN-UI-ARCH-001_UIArchitecture_r0_WIP.md",
+      "size_bytes": 1325,
+      "sha256": "79534a2356b60743c9bb83cb25d417769530204a9b361ad0ff7a6c54b74809ad"
+    },
+    {
+      "path": "docs/active/CMN-UI-SPEC-001_OnboardingTools_r0_WIP.md",
+      "size_bytes": 6132,
+      "sha256": "72a760e526f8f369045a60ac6954bacc7bd595da61703c50e4ddea6193ed6c68"
+    },
+    {
+      "path": "docs/active/CMN-UI-SPEC-002_LauncherShell_r0_WIP.md",
+      "size_bytes": 1444,
+      "sha256": "fe800cd6d29a4909a7f55c9093be04b7e34122204ec9a16edfea1cf32c3cd092"
+    },
+    {
+      "path": "docs/active/CMN-UI-SPEC-003_ConfigPlatform_r0_WIP.md",
+      "size_bytes": 1728,
+      "sha256": "0f12dac06b74d09c40e8ed7aa96b8ee92f072aaf9f9ac754a31f532054314a63"
+    },
+    {
+      "path": "docs/active/CMN-UI-SPEC-004_PortalEntry_r0_WIP.md",
+      "size_bytes": 1204,
+      "sha256": "472330a393a18bc04fd7716d0848368ff2e19900406b6463b4d1f53854ae1ced"
+    },
+    {
+      "path": "docs/active/CMN-UI-SPEC-005_DiagnosticsUX_r0_WIP.md",
+      "size_bytes": 1364,
+      "sha256": "2af97dba34ac7f4630333943dad0b4841e3fb3a31e0dc35e4cd00d9f7f8cb28b"
+    },
+    {
+      "path": "docs/active/CMN-UI-SPEC-006_ProfilePresets_r0_WIP.md",
+      "size_bytes": 1424,
+      "sha256": "cb8ecd6bae5e73fec2aa2cc42c3e144d4e550cec4796b27540be4e58449b3bf3"
+    },
+    {
+      "path": "docs/archive/.gitkeep",
+      "size_bytes": 1,
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+    },
+    {
+      "path": "docs/templates/CMN-TPL-001_ControlledDocTemplate.md",
+      "size_bytes": 571,
+      "sha256": "687547fee4f9b56ddfc6bf17c3aafd3b5ce67ba7015e172f19808e1cfd84c1fd"
+    },
+    {
+      "path": "proof/precode_readiness_report.md",
+      "size_bytes": 1474,
+      "sha256": "384e56a40cd916a054e2fc2e9a4688478cfc00633736d45fa364534154f65016"
+    },
+    {
+      "path": "proof/source_refs/cic_zip_tree_excerpt.txt",
+      "size_bytes": 14062,
+      "sha256": "f3bd5c61bbd4ab0d68f1b5560fcf383b0e4ccad922181f3009ba5ef1e09bb4a4"
+    },
+    {
+      "path": "proof/source_refs/source_material_index.md",
+      "size_bytes": 620,
+      "sha256": "ca7683bba3e52326a125d7d702060760db0c37d7d91c8d868ac975fb4a0e2ff0"
+    },
+    {
+      "path": "proof/source_refs/udq_zip_tree_excerpt.txt",
+      "size_bytes": 6097,
+      "sha256": "c7dcd2a4128bfaceeac0ce348cadb4faeb45b5803c605a68950aec6412d39745"
+    },
+    {
+      "path": "pyproject.toml",
+      "size_bytes": 294,
+      "sha256": "1c4e0963f8de01ff54578e9b7ec07036999d184cf2687cf3dfedb0fda3dd8594"
+    },
+    {
+      "path": "registries/audit_fields.json",
+      "size_bytes": 305,
+      "sha256": "efb34c3fa837a264b9e2e6962f7d9f67a0674b09796501d97130ed21b776bc5a"
+    },
+    {
+      "path": "registries/cross_refs.json",
+      "size_bytes": 13539,
+      "sha256": "6d2c94f0b0e49ebd6e0d007ee9aa0994fb57f41d2a22e83c64829a4a991eb89c"
+    },
+    {
+      "path": "registries/decisions.json",
+      "size_bytes": 671,
+      "sha256": "cc062676ae82f82e6bad4be99a737615341acf04188a5fa02e52a7553aee8a15"
+    },
+    {
+      "path": "registries/documents.json",
+      "size_bytes": 16303,
+      "sha256": "7dda847288f5c8878724242b7e94acdd4dd2577ff9b6e2af31f6aecd6cd00b56"
+    },
+    {
+      "path": "registries/node_roles.json",
+      "size_bytes": 207,
+      "sha256": "16cb9f56551409f3572ff13d73786609d0a9007a1f82a043234b9f6f1e753aa2"
+    },
+    {
+      "path": "registries/onboarding_tools.json",
+      "size_bytes": 10354,
+      "sha256": "4e1b5e224924f792370d8e65e27a18a2be5e007317d3409ef33ee6169043018f"
+    },
+    {
+      "path": "registries/permissions.json",
+      "size_bytes": 425,
+      "sha256": "da7ab1f47d30ea5832ece1a3342ee13869bc774d6d24c9dca49dd82dda80af59"
+    },
+    {
+      "path": "registries/privacy_profiles.json",
+      "size_bytes": 1356,
+      "sha256": "59567a544853a02fe1abc67e6d94965425897cd44eb580073155017a6c02d32b"
+    },
+    {
+      "path": "registries/requirements.json",
+      "size_bytes": 33960,
+      "sha256": "6c46457e5b930684e715904f15807880113ac9cef971b63c75f655301020d318"
+    },
+    {
+      "path": "registries/risks.json",
+      "size_bytes": 9740,
+      "sha256": "c7522ec22d9a8c6bed41c33964e7b790f02d90a02951ba35c7fa44b2dd2e85a2"
+    },
+    {
+      "path": "registries/roles.json",
+      "size_bytes": 1039,
+      "sha256": "ccab5e01eea6a409c467b124978e4a27a28b7513207a24f3e1822b482f28922c"
+    },
+    {
+      "path": "registries/service_catalog.json",
+      "size_bytes": 790,
+      "sha256": "417b86e6b6c389c40dcdb50fefd0a5759cf0bf58aff431c92835caba77a2b0f9"
+    },
+    {
+      "path": "registries/terms.json",
+      "size_bytes": 473,
+      "sha256": "9ed23d3b511d2502a4ad64371f1c6e87567d624086ec5f1ef741fc81b77efccf"
+    },
+    {
+      "path": "runtime/.gitkeep",
+      "size_bytes": 1,
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+    },
+    {
+      "path": "runtime/README.md",
+      "size_bytes": 257,
+      "sha256": "230d4a51bfb49340c2703fe598587c8a12c51b33189c826ebfe10d93ebce4c6b"
+    },
+    {
+      "path": "src/commnet/README.md",
+      "size_bytes": 251,
+      "sha256": "dfd3741daa09a651200a92752f5439fb7e25d2dc3ee560328ce9ad6a0f746818"
+    },
+    {
+      "path": "src/commnet/__init__.py",
+      "size_bytes": 125,
+      "sha256": "a911e3b37c1ef93101d781087eea13f9131a533a56b22942ba4dfef4b4e9a367"
+    },
+    {
+      "path": "tests/audit/test_package_shape.py",
+      "size_bytes": 246,
+      "sha256": "589804d23ef79b5512c6fb57f2267100c461a7cb69086e72c5f72ffc662688ed"
+    },
+    {
+      "path": "tests/data/.gitkeep",
+      "size_bytes": 1,
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+    },
+    {
+      "path": "tests/docs/test_doc_metadata.py",
+      "size_bytes": 473,
+      "sha256": "41af4656fcfc8bd6ecbcf85788634d6af76a3db21f09bc4383c0aea84955d869"
+    },
+    {
+      "path": "tests/scaffold/test_src_boundaries.py",
+      "size_bytes": 274,
+      "sha256": "426fe8787d6a13a5365179877a4eaa8d119a983514e185b4d4a42ed4fd16236b"
+    },
+    {
+      "path": "tests/schema/test_registries.py",
+      "size_bytes": 472,
+      "sha256": "aac9715bf3f9bc400708b0e54bda44d39b58ee74ab8e494fd11547cda7750737"
+    },
+    {
+      "path": "tools/audit/audit_package.py",
+      "size_bytes": 4453,
+      "sha256": "177324cba2127952ff6e0a8edaf63dd179f11ac4086dbe0dc1a76a836d192e51"
+    },
+    {
+      "path": "tools/audit/check_doc_ids.py",
+      "size_bytes": 3949,
+      "sha256": "10fd432c876ac415e65389ccd1cdcc442dd2bec8df0ae5710c5f8b29a5d8f8fc"
+    },
+    {
+      "path": "tools/audit/check_overclaims.py",
+      "size_bytes": 3817,
+      "sha256": "d2c0865836e8cf7d91bdd3953348e312a492ff40b72c8141ab920ffc53c30a70"
+    },
+    {
+      "path": "tools/audit/check_package_shape.py",
+      "size_bytes": 3298,
+      "sha256": "047c4272aae31dc1dbae38f62d49a9ce9c217373d013a2f2ca48a51de32cea20"
+    },
+    {
+      "path": "tools/audit/check_paths.py",
+      "size_bytes": 3734,
+      "sha256": "0958be74cbc4d7defcc970fd7b29d9f5eb27d14f9d919a2c3f291997879f9466"
+    },
+    {
+      "path": "tools/audit/check_placeholders.py",
+      "size_bytes": 3853,
+      "sha256": "7a007f8f44bc0f1134ab65f7bd42cd31f972e234f5da131e3cdef14750e32e19"
+    },
+    {
+      "path": "tools/audit/check_registry_sync.py",
+      "size_bytes": 4713,
+      "sha256": "08998bc1c301b90d7d08a2194998accdca94acb20d9dbad1fcd4243345758612"
+    },
+    {
+      "path": "tools/audit/check_req_trace.py",
+      "size_bytes": 3779,
+      "sha256": "71a4c3bf1001b5c3729c1e756316470ca369eb89306d34e0a8c08e9edd3082dd"
+    },
+    {
+      "path": "tools/launchers/README.md",
+      "size_bytes": 238,
+      "sha256": "72a693fff67764ef77e417f2512c645fe5fad3de558627d5e6ffc60ccab88688"
+    },
+    {
+      "path": "tools/package/make_manifest.py",
+      "size_bytes": 3497,
+      "sha256": "c694ba321a7bdb83406dbc23e3b79c60434d1d79299a76baf66fd97cc190be2b"
+    },
+    {
+      "path": "tools/package/make_tree_report.py",
+      "size_bytes": 3015,
+      "sha256": "ba1fdf3c972ec64177c87803395d827d0f1405a712f9cb2af76cbe9bc0f619c1"
+    }
+  ]
+}

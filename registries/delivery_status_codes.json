@@ -1,0 +1,12 @@
+[
+  "created",
+  "queued",
+  "routing",
+  "attempting",
+  "delivered",
+  "deferred",
+  "failed",
+  "expired",
+  "dropped",
+  "policy_blocked"
+]

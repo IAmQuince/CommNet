@@ -1,0 +1,8 @@
+{
+  "fields": [
+    "node_id",
+    "commnet_user_id",
+    "node_display_name",
+    "identity_created_at"
+  ]
+}

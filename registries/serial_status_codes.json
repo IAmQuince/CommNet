@@ -1,0 +1,11 @@
+{
+  "codes": [
+    "dependency_missing",
+    "port_not_configured",
+    "probe_ok",
+    "ack_accepted",
+    "remote_ack_received",
+    "timeout",
+    "parse_error"
+  ]
+}

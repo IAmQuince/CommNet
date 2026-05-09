@@ -1,0 +1,23 @@
+{
+  "checks": {
+    "display_settings_present": true,
+    "hud_method_present": true,
+    "nav_sections_present": true,
+    "route_rows_present": true,
+    "ui_defaults_merged": true
+  },
+  "extra": {
+    "sections": [
+      "HUD",
+      "Network & Invites",
+      "Sharing & Files",
+      "Users & Permissions",
+      "Mail",
+      "Devices & Catena",
+      "Portal Apps",
+      "Diagnostics & Audit",
+      "Settings"
+    ]
+  },
+  "status": "PASS"
+}

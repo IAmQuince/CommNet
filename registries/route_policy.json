@@ -1,0 +1,43 @@
+{
+  "catena_serial_lora": {
+    "status": "fake_serial_working_real_serial_configurable"
+  },
+  "device_status": {
+    "preferred": [
+      "local_loopback",
+      "lan_http"
+    ]
+  },
+  "directory_update": {
+    "preferred": [
+      "lan_http",
+      "reticulum_lxmf",
+      "local_loopback"
+    ]
+  },
+  "emergency_alert": {
+    "preferred": [
+      "local_loopback",
+      "lan_http",
+      "meshtastic_serial",
+      "reticulum_lxmf"
+    ],
+    "priority": "emergency"
+  },
+  "netux_catena_added": true,
+  "route_probe": {
+    "preferred": [
+      "local_loopback",
+      "lan_http"
+    ]
+  },
+  "text_message": {
+    "large_file_allowed": false,
+    "preferred": [
+      "local_loopback",
+      "lan_http",
+      "meshtastic_serial",
+      "reticulum_lxmf"
+    ]
+  }
+}

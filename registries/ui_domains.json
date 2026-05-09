@@ -1,0 +1,53 @@
+{
+  "package_class": "USABILITY_HUD_READY_WITH_DEBT",
+  "domains": [
+    {
+      "id": "network",
+      "label": "Network & Invites",
+      "color": "blue",
+      "symbol": "🌐"
+    },
+    {
+      "id": "sharing",
+      "label": "Sharing & Files",
+      "color": "green",
+      "symbol": "📁"
+    },
+    {
+      "id": "users",
+      "label": "Users & Permissions",
+      "color": "purple",
+      "symbol": "👥"
+    },
+    {
+      "id": "mail",
+      "label": "Mail & Messages",
+      "color": "teal",
+      "symbol": "✉️"
+    },
+    {
+      "id": "devices",
+      "label": "Devices & Catena",
+      "color": "orange",
+      "symbol": "📡"
+    },
+    {
+      "id": "safety",
+      "label": "Emergency & Privacy",
+      "color": "red",
+      "symbol": "🚨"
+    },
+    {
+      "id": "diagnostics",
+      "label": "Diagnostics & Audit",
+      "color": "gray_amber",
+      "symbol": "🩺"
+    },
+    {
+      "id": "portal_apps",
+      "label": "Portal Apps & Demos",
+      "color": "indigo",
+      "symbol": "🕹️"
+    }
+  ]
+}

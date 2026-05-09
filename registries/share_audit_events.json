@@ -1,0 +1,11 @@
+{
+  "events": [
+    "share_root_added",
+    "share_root_deleted",
+    "share_access",
+    "share_download",
+    "share_upload",
+    "share_denied",
+    "quick_share_setup_applied"
+  ]
+}

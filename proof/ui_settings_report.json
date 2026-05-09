@@ -1,0 +1,25 @@
+{
+  "checks": {
+    "bool_saved": true,
+    "density_saved": true,
+    "nav_saved": true,
+    "theme_saved": true
+  },
+  "extra": {
+    "ui": {
+      "admin_home": "hud",
+      "card_density": "compact",
+      "color_coding": true,
+      "guest_card_style": "detailed",
+      "hud_diagnostics": "full",
+      "icon_mode": "emoji",
+      "nav_style": "rail",
+      "show_advanced_cards": true,
+      "show_demo_services": true,
+      "show_simulated_devices": false,
+      "show_unavailable_guest_apps": "grayed",
+      "theme": "dark"
+    }
+  },
+  "status": "PASS"
+}

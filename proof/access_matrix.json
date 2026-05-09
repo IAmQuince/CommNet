@@ -1,0 +1,67 @@
+{
+  "checks": {
+    "admin_routes_denied_to_guest": true,
+    "emergency_public": true,
+    "mail_requires_login": true,
+    "share_policy_marked": true
+  },
+  "extra": {
+    "matrix": {
+      "/admin/devices": {
+        "admin": true,
+        "anonymous": false,
+        "guest": false,
+        "trusted_user": false
+      },
+      "/admin/hud": {
+        "admin": true,
+        "anonymous": false,
+        "guest": false,
+        "trusted_user": false
+      },
+      "/admin/mail": {
+        "admin": true,
+        "anonymous": false,
+        "guest": false,
+        "trusted_user": false
+      },
+      "/admin/users": {
+        "admin": true,
+        "anonymous": false,
+        "guest": false,
+        "trusted_user": false
+      },
+      "/emergency": {
+        "admin": true,
+        "anonymous": true,
+        "guest": true,
+        "trusted_user": true
+      },
+      "/mail": {
+        "admin": true,
+        "anonymous": false,
+        "guest": true,
+        "trusted_user": true
+      },
+      "/portal": {
+        "admin": true,
+        "anonymous": true,
+        "guest": true,
+        "trusted_user": true
+      },
+      "/retroweb": {
+        "admin": true,
+        "anonymous": "policy",
+        "guest": "policy",
+        "trusted_user": "policy"
+      },
+      "/share": {
+        "admin": true,
+        "anonymous": "policy",
+        "guest": "policy",
+        "trusted_user": "policy"
+      }
+    }
+  },
+  "status": "PASS"
+}

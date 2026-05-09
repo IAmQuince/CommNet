@@ -1,0 +1,5 @@
+{
+  "peer_invite": "CommNet_UserID + URL + access code",
+  "share": "http://<lan-ip>:8765/share",
+  "visitor": "http://<lan-ip>:8765/"
+}

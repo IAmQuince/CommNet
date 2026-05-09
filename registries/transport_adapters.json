@@ -1,0 +1,90 @@
+[
+  {
+    "adapter_id": "local_loopback",
+    "lazy_optional_imports": true,
+    "payload_limit": "small_json",
+    "status": "implemented"
+  },
+  {
+    "adapter_id": "lan_http",
+    "lazy_optional_imports": true,
+    "payload_limit": "small_json",
+    "status": "implemented"
+  },
+  {
+    "adapter_id": "meshtastic_serial",
+    "lazy_optional_imports": true,
+    "payload_limit": "not_active",
+    "status": "declared_dependency_aware"
+  },
+  {
+    "adapter_id": "meshtastic_tcp",
+    "lazy_optional_imports": true,
+    "payload_limit": "not_active",
+    "status": "declared_dependency_aware"
+  },
+  {
+    "adapter_id": "meshtastic_ble",
+    "lazy_optional_imports": true,
+    "payload_limit": "not_active",
+    "status": "declared_dependency_aware"
+  },
+  {
+    "adapter_id": "meshtastic_mqtt",
+    "lazy_optional_imports": true,
+    "payload_limit": "not_active",
+    "status": "declared_dependency_aware"
+  },
+  {
+    "adapter_id": "reticulum_rns",
+    "lazy_optional_imports": true,
+    "payload_limit": "not_active",
+    "status": "declared_dependency_aware"
+  },
+  {
+    "adapter_id": "reticulum_lxmf",
+    "lazy_optional_imports": true,
+    "payload_limit": "not_active",
+    "status": "declared_dependency_aware"
+  },
+  {
+    "adapter_id": "bluetooth_ble",
+    "lazy_optional_imports": true,
+    "payload_limit": "not_active",
+    "status": "declared_dependency_aware"
+  },
+  {
+    "adapter_id": "generic_serial",
+    "lazy_optional_imports": true,
+    "payload_limit": "not_active",
+    "status": "declared_dependency_aware"
+  },
+  {
+    "adapter_id": "storage_node",
+    "lazy_optional_imports": true,
+    "payload_limit": "not_active",
+    "status": "declared_dependency_aware"
+  },
+  {
+    "adapter_id": "removable_media",
+    "lazy_optional_imports": true,
+    "payload_limit": "not_active",
+    "status": "declared_dependency_aware"
+  },
+  {
+    "adapter_id": "phone_cache",
+    "lazy_optional_imports": true,
+    "payload_limit": "not_active",
+    "status": "declared_dependency_aware"
+  },
+  {
+    "adapter_id": "drone_mule",
+    "lazy_optional_imports": true,
+    "payload_limit": "not_active",
+    "status": "declared_dependency_aware"
+  },
+  {
+    "adapter_id": "catena_serial_lora",
+    "status": "added_in_20260508_06"
+  }
+]

@@ -1,0 +1,258 @@
+{
+  "schema": "cmn.risks.v0",
+  "package": "20260508_00_CommNetPrecode",
+  "risks": [
+    {
+      "risk_id": "CMN-RISK-001",
+      "risk": "Overbuilding before architecture is controlled",
+      "why_it_matters": "Coding GUIs and launchers before requirements stabilize can create rework.",
+      "mitigation": "Keep this package PRECODE_BASELINE; product code waits for readiness gate.",
+      "severity": "High"
+    },
+    {
+      "risk_id": "CMN-RISK-002",
+      "risk": "False implementation claims",
+      "why_it_matters": "Users may trust stubs as working security or onboarding tools.",
+      "mitigation": "Audit for overclaiming; mark this package as no product implementation scope.",
+      "severity": "High"
+    },
+    {
+      "risk_id": "CMN-RISK-003",
+      "risk": "Path length failures",
+      "why_it_matters": "Windows extraction and tooling can fail with long names.",
+      "mitigation": "Short package root, short filenames, automated path audit.",
+      "severity": "High"
+    },
+    {
+      "risk_id": "CMN-RISK-004",
+      "risk": "File loss during packaging",
+      "why_it_matters": "Docs, registries, or tools could be omitted.",
+      "mitigation": "Manifest, tree report, hash manifest, and package audit before zip.",
+      "severity": "High"
+    },
+    {
+      "risk_id": "CMN-RISK-005",
+      "risk": "Documentation drift",
+      "why_it_matters": "Docs, registries, and requirements can disagree.",
+      "mitigation": "Registry sync and traceability audits.",
+      "severity": "High"
+    },
+    {
+      "risk_id": "CMN-RISK-006",
+      "risk": "Home and school divergence",
+      "why_it_matters": "Two deployments may evolve into incompatible systems.",
+      "mitigation": "One policy/config engine with different presets.",
+      "severity": "Medium"
+    },
+    {
+      "risk_id": "CMN-RISK-007",
+      "risk": "Privacy exposure by default",
+      "why_it_matters": "Users could accidentally publish files or identity.",
+      "mitigation": "Private/local-only/invisible/no-sharing defaults.",
+      "severity": "High"
+    },
+    {
+      "risk_id": "CMN-RISK-008",
+      "risk": "UI-only security",
+      "why_it_matters": "Hidden controls do not enforce access control.",
+      "mitigation": "Backend policy enforcement required by specification.",
+      "severity": "High"
+    },
+    {
+      "risk_id": "CMN-RISK-009",
+      "risk": "Confusing permissions",
+      "why_it_matters": "Users may not understand who can see or do what.",
+      "mitigation": "Policy simulator, plain-language labels, novice/advanced modes.",
+      "severity": "High"
+    },
+    {
+      "risk_id": "CMN-RISK-010",
+      "risk": "Unreviewed content availability",
+      "why_it_matters": "Schools or communities could expose inappropriate content.",
+      "mitigation": "Review states and explicit publishing rules.",
+      "severity": "High"
+    },
+    {
+      "risk_id": "CMN-RISK-011",
+      "risk": "Registry integrity problems",
+      "why_it_matters": "Moved or duplicated files can break trust.",
+      "mitigation": "Stable IDs, content hashes, provenance, snapshots.",
+      "severity": "High"
+    },
+    {
+      "risk_id": "CMN-RISK-012",
+      "risk": "Metadata separation failure",
+      "why_it_matters": "Tags and permissions may be lost when files move.",
+      "mitigation": "Central registry and exportable snapshots.",
+      "severity": "Medium"
+    },
+    {
+      "risk_id": "CMN-RISK-013",
+      "risk": "Irreversible config mistakes",
+      "why_it_matters": "Bad settings can expose data or lock users out.",
+      "mitigation": "Snapshot before apply, rollback plan, audit entry.",
+      "severity": "High"
+    },
+    {
+      "risk_id": "CMN-RISK-014",
+      "risk": "Noisy audit logs",
+      "why_it_matters": "Logs can become unusable.",
+      "mitigation": "Controlled event types and required audit fields.",
+      "severity": "Medium"
+    },
+    {
+      "risk_id": "CMN-RISK-015",
+      "risk": "Sensitive log leakage",
+      "why_it_matters": "Support bundles can leak private paths or identities.",
+      "mitigation": "Redaction levels and inclusion manifest.",
+      "severity": "High"
+    },
+    {
+      "risk_id": "CMN-RISK-016",
+      "risk": "Mesh claims exceed implementation",
+      "why_it_matters": "True mesh behavior is hardware- and transport-dependent.",
+      "mitigation": "Separate LAN, peer, replication, gateway, and mesh terms.",
+      "severity": "High"
+    },
+    {
+      "risk_id": "CMN-RISK-017",
+      "risk": "Hardware lock-in",
+      "why_it_matters": "A core that assumes one device type limits adoption.",
+      "mitigation": "Node roles and adapter abstraction.",
+      "severity": "Medium"
+    },
+    {
+      "risk_id": "CMN-RISK-018",
+      "risk": "Python installation friction",
+      "why_it_matters": "Users may fail before setup starts.",
+      "mitigation": "Install Check, offline installer guidance, eventual bundled runtime option.",
+      "severity": "Medium"
+    },
+    {
+      "risk_id": "CMN-RISK-019",
+      "risk": "Shortcut breakage",
+      "why_it_matters": "Clickable launchers can fail after unzip.",
+      "mitigation": "Relative launchers and launcher repair tool requirement.",
+      "severity": "Medium"
+    },
+    {
+      "risk_id": "CMN-RISK-020",
+      "risk": "Admin tool overload",
+      "why_it_matters": "Powerful configuration can intimidate or mislead users.",
+      "mitigation": "Mode separation and guided first-run flows.",
+      "severity": "Medium"
+    },
+    {
+      "risk_id": "CMN-RISK-021",
+      "risk": "Gateway exposure risk",
+      "why_it_matters": "Internet bridging changes the trust boundary.",
+      "mitigation": "Disabled by default, warning, audit, dedicated gateway boundary tool.",
+      "severity": "High"
+    },
+    {
+      "risk_id": "CMN-RISK-022",
+      "risk": "Replication spreads private content",
+      "why_it_matters": "Cached data may be hard to retract.",
+      "mitigation": "Dry-run replication plans and trust-aware cache policy.",
+      "severity": "High"
+    },
+    {
+      "risk_id": "CMN-RISK-023",
+      "risk": "Ambiguous deletion",
+      "why_it_matters": "Delete from cache, registry, or community are different.",
+      "mitigation": "Controlled deletion types and confirmation language.",
+      "severity": "Medium"
+    },
+    {
+      "risk_id": "CMN-RISK-024",
+      "risk": "Moderation accountability gaps",
+      "why_it_matters": "Review decisions need reasons and traceability.",
+      "mitigation": "Reason codes, actor IDs, timestamps, and appeal hooks.",
+      "severity": "Medium"
+    },
+    {
+      "risk_id": "CMN-RISK-025",
+      "risk": "Lost admin access",
+      "why_it_matters": "Local systems need practical recovery.",
+      "mitigation": "Recovery artifact and restore flow requirements.",
+      "severity": "Medium"
+    },
+    {
+      "risk_id": "CMN-RISK-026",
+      "risk": "Malformed input",
+      "why_it_matters": "Names, paths, metadata, and imports can break tools or create unsafe rendering.",
+      "mitigation": "Length limits, character allowlists, path normalization, safe rendering.",
+      "severity": "High"
+    },
+    {
+      "risk_id": "CMN-RISK-027",
+      "risk": "Unsafe file serving",
+      "why_it_matters": "Portal could expose arbitrary local files.",
+      "mitigation": "Serve only registered approved content from controlled roots.",
+      "severity": "High"
+    },
+    {
+      "risk_id": "CMN-RISK-028",
+      "risk": "Overscanning private files",
+      "why_it_matters": "Registry builder may index too much.",
+      "mitigation": "Explicit folder selection, preview, exclude patterns, confirmation.",
+      "severity": "High"
+    },
+    {
+      "risk_id": "CMN-RISK-029",
+      "risk": "Weak hardware performance",
+      "why_it_matters": "Old PCs, Pis, and school machines may struggle.",
+      "mitigation": "Lightweight core, incremental indexing, no heavy base dependencies.",
+      "severity": "Medium"
+    },
+    {
+      "risk_id": "CMN-RISK-030",
+      "risk": "Incomplete offline operation",
+      "why_it_matters": "A local-first system loses value if cloud dependency remains.",
+      "mitigation": "Offline-first tests and optional external integrations.",
+      "severity": "High"
+    },
+    {
+      "risk_id": "CMN-RISK-031",
+      "risk": "Updates overwrite local policy",
+      "why_it_matters": "Package updates could destroy runtime configuration.",
+      "mitigation": "Separate source from runtime, backup before migration.",
+      "severity": "High"
+    },
+    {
+      "risk_id": "CMN-RISK-032",
+      "risk": "Runtime artifacts committed",
+      "why_it_matters": "Private logs or identities may leak.",
+      "mitigation": "runtime excluded by gitignore and audit scan.",
+      "severity": "High"
+    },
+    {
+      "risk_id": "CMN-RISK-033",
+      "risk": "Tests grow without scope",
+      "why_it_matters": "Validation work can become unbounded.",
+      "mitigation": "Sprint-specific test plan tied to claims.",
+      "severity": "Medium"
+    },
+    {
+      "risk_id": "CMN-RISK-034",
+      "risk": "No acceptance gate",
+      "why_it_matters": "Coding may start too early.",
+      "mitigation": "PRECODE_READY gate with debt register.",
+      "severity": "High"
+    },
+    {
+      "risk_id": "CMN-RISK-035",
+      "risk": "Legal/policy uncertainty",
+      "why_it_matters": "Schools, libraries, and neighborhoods have different duties.",
+      "mitigation": "Deployment owner responsibility and policy hooks.",
+      "severity": "Medium"
+    },
+    {
+      "risk_id": "CMN-RISK-036",
+      "risk": "Concept expansion",
+      "why_it_matters": "The project can try to become too many systems at once.",
+      "mitigation": "Scope register and staged milestones.",
+      "severity": "Medium"
+    }
+  ]
+}

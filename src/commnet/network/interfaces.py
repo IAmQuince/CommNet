@@ -1,0 +1,1 @@
+from commnet.setup.detect_network import detect_lan_addresses

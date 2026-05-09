@@ -1,0 +1,56 @@
+[
+  {
+    "dependency_id": "meshtastic",
+    "package_name": "meshtastic",
+    "import_name": "meshtastic",
+    "profile": "meshtastic_lora"
+  },
+  {
+    "dependency_id": "pyserial",
+    "package_name": "pyserial",
+    "import_name": "serial",
+    "profile": "serial_lora"
+  },
+  {
+    "dependency_id": "paho_mqtt",
+    "package_name": "paho-mqtt",
+    "import_name": "paho.mqtt.client",
+    "profile": "meshtastic_mqtt"
+  },
+  {
+    "dependency_id": "rns",
+    "package_name": "rns",
+    "import_name": "RNS",
+    "profile": "reticulum"
+  },
+  {
+    "dependency_id": "lxmf",
+    "package_name": "lxmf",
+    "import_name": "LXMF",
+    "profile": "reticulum_lxmf"
+  },
+  {
+    "dependency_id": "bleak",
+    "package_name": "bleak",
+    "import_name": "bleak",
+    "profile": "bluetooth"
+  },
+  {
+    "dependency_id": "zeroconf",
+    "package_name": "zeroconf",
+    "import_name": "zeroconf",
+    "profile": "lan_discovery"
+  },
+  {
+    "dependency_id": "psutil",
+    "package_name": "psutil",
+    "import_name": "psutil",
+    "profile": "diagnostics"
+  },
+  {
+    "dependency_id": "waitress",
+    "package_name": "waitress",
+    "import_name": "waitress",
+    "profile": "server"
+  }
+]

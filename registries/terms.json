@@ -1,0 +1,11 @@
+{
+  "schema": "cmn.terms.v0",
+  "terms": {
+    "CommNet": "The governed project name for the community internet platform.",
+    "community_web": "User-facing local portal experience.",
+    "local_first": "Useful offline and private by default.",
+    "gateway": "Optional boundary-crossing service disabled by default.",
+    "visibility": "Discoverability of identity, node, service, or content.",
+    "sharing": "Access/copy/cache/replication policy for a resource."
+  }
+}

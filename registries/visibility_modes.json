@@ -1,0 +1,11 @@
+{
+  "default": "private_local_only",
+  "visibility_modes": [
+    "private_local_only",
+    "visible_on_this_machine",
+    "visible_to_local_lan",
+    "visible_to_approved_peers",
+    "visible_to_community_directory",
+    "gateway_exposed"
+  ]
+}

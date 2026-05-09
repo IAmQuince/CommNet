@@ -1,0 +1,11 @@
+{
+  "checks": {
+    "admin_allowed_admin_hud": true,
+    "admin_session_reports_can_admin": true,
+    "anonymous_redirected_to_login": true,
+    "guest_denied_admin_hud": true,
+    "server_ready": true
+  },
+  "extra": {},
+  "status": "PASS"
+}

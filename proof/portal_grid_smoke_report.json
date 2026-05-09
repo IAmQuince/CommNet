@@ -1,0 +1,13 @@
+{
+  "checks": {
+    "bbs_card_present": true,
+    "not_admin_rail_layout": true,
+    "portal_grid_present": true,
+    "portal_returns_200": true,
+    "retroweb_card_present": true
+  },
+  "extra": {
+    "body_length": 3651
+  },
+  "status": "PASS"
+}

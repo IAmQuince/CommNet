@@ -1,0 +1,67 @@
+{
+  "schema": "cmn.backbone_providers.v0",
+  "package": "20260508_00_BackboneReqs",
+  "providers": [
+    {
+      "id": "local_http_lan",
+      "label": "Local LAN/Wi-Fi HTTP",
+      "first_class": true,
+      "role": "high-bandwidth local path",
+      "adapters": [
+        "lan_http",
+        "lan_zeroconf_discovery"
+      ]
+    },
+    {
+      "id": "meshtastic",
+      "label": "Meshtastic LoRa",
+      "first_class": true,
+      "role": "off-the-shelf LoRa radio mesh ecosystem",
+      "adapters": [
+        "meshtastic_serial",
+        "meshtastic_tcp",
+        "meshtastic_ble",
+        "meshtastic_mqtt"
+      ]
+    },
+    {
+      "id": "reticulum",
+      "label": "Reticulum RNS",
+      "first_class": true,
+      "role": "resilient network backbone",
+      "adapters": [
+        "reticulum_rns"
+      ]
+    },
+    {
+      "id": "lxmf",
+      "label": "LXMF over Reticulum",
+      "first_class": true,
+      "role": "Reticulum messaging/store-and-forward layer",
+      "adapters": [
+        "reticulum_lxmf"
+      ]
+    },
+    {
+      "id": "bluetooth",
+      "label": "Bluetooth",
+      "first_class": false,
+      "role": "nearby short-range optional path",
+      "adapters": [
+        "bluetooth_ble"
+      ]
+    },
+    {
+      "id": "custody",
+      "label": "Storage and Data Mule Custody",
+      "first_class": true,
+      "role": "delayed bulk and cache transport",
+      "adapters": [
+        "storage_node",
+        "removable_media",
+        "phone_cache",
+        "drone_mule"
+      ]
+    }
+  ]
+}

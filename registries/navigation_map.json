@@ -1,0 +1,17 @@
+{
+  "admin": [
+    {
+      "label": "network-paths",
+      "path": "/admin/network-paths"
+    },
+    {
+      "label": "catena-hardware",
+      "path": "/admin/catena-hardware"
+    },
+    {
+      "label": "catena-transcript",
+      "path": "/admin/catena-transcript"
+    }
+  ],
+  "sections": []
+}

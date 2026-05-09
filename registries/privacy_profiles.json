@@ -1,0 +1,53 @@
+{
+  "schema": "cmn.privacy_profiles.v0",
+  "profiles": [
+    {
+      "profile_id": "home_private",
+      "default_visibility": "private_local",
+      "gateway": "disabled",
+      "sharing": "disabled"
+    },
+    {
+      "profile_id": "home_shared",
+      "default_visibility": "private_local",
+      "gateway": "disabled",
+      "sharing": "explicit_approval"
+    },
+    {
+      "profile_id": "school_classroom",
+      "default_visibility": "private_local",
+      "gateway": "disabled",
+      "sharing": "admin_review_required"
+    },
+    {
+      "profile_id": "school_admin",
+      "default_visibility": "private_local",
+      "gateway": "disabled",
+      "sharing": "policy_controlled"
+    },
+    {
+      "profile_id": "library_public_local",
+      "default_visibility": "local_network",
+      "gateway": "disabled",
+      "sharing": "curated_public_local"
+    },
+    {
+      "profile_id": "makerspace",
+      "default_visibility": "private_local",
+      "gateway": "disabled",
+      "sharing": "group_approval"
+    },
+    {
+      "profile_id": "neighborhood",
+      "default_visibility": "private_local",
+      "gateway": "disabled",
+      "sharing": "opt_in_directory"
+    },
+    {
+      "profile_id": "emergency_outage",
+      "default_visibility": "local_network",
+      "gateway": "disabled",
+      "sharing": "emergency_resources_only"
+    }
+  ]
+}

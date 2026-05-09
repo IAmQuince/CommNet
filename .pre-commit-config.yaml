@@ -1,0 +1,8 @@
+repos:
+  - repo: local
+    hooks:
+      - id: commnet-audit
+        name: commnet package audit
+        entry: python tools/audit/audit_package.py
+        language: system
+        pass_filenames: false

@@ -1,0 +1,11 @@
+{
+  "checks": {
+    "account_menu_rendered": true,
+    "admin_session_api": true,
+    "dropdown_contains_profile_icon": true,
+    "guest_session_api": true,
+    "server_ready": true
+  },
+  "extra": {},
+  "status": "PASS"
+}

@@ -1,0 +1,8 @@
+{
+  "demos": [
+    {
+      "id": "catena_serial_lora_messenger",
+      "status": "fake_serial_working_real_serial_configurable"
+    }
+  ]
+}

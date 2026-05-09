@@ -1,0 +1,27 @@
+{
+  "package_class": "USABILITY_HUD_READY_WITH_DEBT",
+  "behaviors": [
+    "invisible",
+    "count_only",
+    "list_only",
+    "preview_only",
+    "download",
+    "upload_inbox",
+    "admin_only"
+  ],
+  "safe_preview_allowlist": [
+    "txt",
+    "md",
+    "csv",
+    "png",
+    "jpg",
+    "jpeg",
+    "gif",
+    "webp"
+  ],
+  "blocked_preview": [
+    "html_execution",
+    "javascript_execution",
+    "unknown_binary"
+  ]
+}

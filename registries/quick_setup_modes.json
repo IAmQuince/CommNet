@@ -1,0 +1,8 @@
+{
+  "modes": [
+    "private_only",
+    "share_one_folder",
+    "share_selected_folders",
+    "advanced_drive_share"
+  ]
+}

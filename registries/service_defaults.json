@@ -1,0 +1,60 @@
+{
+  "services": {
+    "bbs": {
+      "enabled_by_default": true,
+      "label": "BBS"
+    },
+    "community_portal": {
+      "enabled_by_default": true,
+      "label": "Community Portal"
+    },
+    "device_registry": {
+      "enabled_by_default": false,
+      "label": "Device Registry"
+    },
+    "directory": {
+      "enabled_by_default": true,
+      "label": "Community Directory"
+    },
+    "emergency": {
+      "enabled_by_default": true,
+      "label": "Emergency Broadcast"
+    },
+    "events": {
+      "enabled_by_default": false,
+      "label": "Events / Concert Demo"
+    },
+    "file_registry": {
+      "enabled_by_default": false,
+      "label": "File Registry"
+    },
+    "library": {
+      "enabled_by_default": false,
+      "label": "Library"
+    },
+    "makerspace": {
+      "enabled_by_default": false,
+      "label": "Makerspace"
+    },
+    "marketplace": {
+      "enabled_by_default": false,
+      "label": "Marketplace"
+    },
+    "personal_site": {
+      "enabled_by_default": false,
+      "label": "Personal Site"
+    },
+    "retroweb": {
+      "enabled_by_default": false,
+      "label": "RetroWeb"
+    },
+    "transport_diagnostics": {
+      "enabled_by_default": true,
+      "label": "Transport Diagnostics"
+    },
+    "work_board": {
+      "enabled_by_default": false,
+      "label": "Work / Services"
+    }
+  }
+}

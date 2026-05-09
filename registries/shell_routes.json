@@ -1,0 +1,27 @@
+{
+  "admin_routes": [
+    "/admin",
+    "/admin/transports",
+    "/admin/diagnostics"
+  ],
+  "api_routes": [
+    "/api/status",
+    "/api/diagnostics",
+    "/api/transports",
+    "/api/loopback-test",
+    "/api/shutdown"
+  ],
+  "portal_routes": [
+    "/portal",
+    "/portal/directory",
+    "/portal/sites",
+    "/portal/library",
+    "/portal/makerspace",
+    "/portal/emergency",
+    "/portal/marketplace",
+    "/portal/bbs",
+    "/portal/retroweb",
+    "/portal/events",
+    "/portal/work"
+  ]
+}

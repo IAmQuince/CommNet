@@ -1,0 +1,11 @@
+{
+  "checks": {
+    "admin_exists": true,
+    "admin_is_owner": true,
+    "default_password_active_detected": true
+  },
+  "extra": {
+    "admin_user_id": "user_a169d12cc159"
+  },
+  "status": "PASS"
+}

@@ -1,0 +1,18 @@
+{
+  "schema": "network_path",
+  "required_fields": [
+    "path_id",
+    "adapter_name",
+    "ipv4_address",
+    "gateway",
+    "classification",
+    "recommendation_score",
+    "reason",
+    "suggested_url"
+  ],
+  "classifications": [
+    "recommended",
+    "warning",
+    "invalid"
+  ]
+}

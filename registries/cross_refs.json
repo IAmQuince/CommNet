@@ -1,0 +1,635 @@
+{
+  "catena_serial_lora": {
+    "status": "fake_serial_working_real_serial_configurable"
+  },
+  "links": [
+    {
+      "from": "CMN-GOV-STD-002",
+      "to": "CMN-GOV-STD-001",
+      "type": "depends_on"
+    },
+    {
+      "from": "CMN-GOV-STD-003",
+      "to": "CMN-GOV-STD-001",
+      "type": "depends_on"
+    },
+    {
+      "from": "CMN-GOV-SOP-001",
+      "to": "CMN-GOV-STD-001",
+      "type": "depends_on"
+    },
+    {
+      "from": "CMN-GOV-SOP-001",
+      "to": "CMN-GOV-STD-003",
+      "type": "depends_on"
+    },
+    {
+      "from": "CMN-GOV-GLO-001",
+      "to": "CMN-GOV-STD-002",
+      "type": "depends_on"
+    },
+    {
+      "from": "CMN-GOV-REG-001",
+      "to": "CMN-GOV-STD-002",
+      "type": "depends_on"
+    },
+    {
+      "from": "CMN-GOV-REG-002",
+      "to": "CMN-GOV-STD-001",
+      "type": "depends_on"
+    },
+    {
+      "from": "CMN-GOV-REG-003",
+      "to": "CMN-GOV-STD-001",
+      "type": "depends_on"
+    },
+    {
+      "from": "CMN-SCM-STD-001",
+      "to": "CMN-GOV-STD-003",
+      "type": "depends_on"
+    },
+    {
+      "from": "CMN-REL-SPEC-001",
+      "to": "CMN-SCM-STD-001",
+      "type": "depends_on"
+    },
+    {
+      "from": "CMN-REL-SPEC-001",
+      "to": "CMN-AUD-SPEC-001",
+      "type": "depends_on"
+    },
+    {
+      "from": "CMN-AUD-SPEC-001",
+      "to": "CMN-GOV-STD-003",
+      "type": "depends_on"
+    },
+    {
+      "from": "CMN-AUD-SPEC-002",
+      "to": "CMN-SEC-SPEC-001",
+      "type": "depends_on"
+    },
+    {
+      "from": "CMN-ARCH-NAR-001",
+      "to": "CMN-GOV-STD-002",
+      "type": "depends_on"
+    },
+    {
+      "from": "CMN-ARCH-SPEC-001",
+      "to": "CMN-ARCH-NAR-001",
+      "type": "depends_on"
+    },
+    {
+      "from": "CMN-ARCH-SPEC-001",
+      "to": "CMN-SEC-BASE-001",
+      "type": "depends_on"
+    },
+    {
+      "from": "CMN-ARCH-SPEC-002",
+      "to": "CMN-ARCH-SPEC-001",
+      "type": "depends_on"
+    },
+    {
+      "from": "CMN-ARCH-SPEC-003",
+      "to": "CMN-SEC-SPEC-001",
+      "type": "depends_on"
+    },
+    {
+      "from": "CMN-ARCH-SPEC-003",
+      "to": "CMN-PRV-SPEC-001",
+      "type": "depends_on"
+    },
+    {
+      "from": "CMN-ARCH-SPEC-004",
+      "to": "CMN-ARCH-SPEC-001",
+      "type": "depends_on"
+    },
+    {
+      "from": "CMN-ARCH-SPEC-004",
+      "to": "CMN-SEC-BASE-001",
+      "type": "depends_on"
+    },
+    {
+      "from": "CMN-ARCH-SPEC-005",
+      "to": "CMN-ARCH-NAR-001",
+      "type": "depends_on"
+    },
+    {
+      "from": "CMN-NET-SPEC-001",
+      "to": "CMN-ARCH-SPEC-005",
+      "type": "depends_on"
+    },
+    {
+      "from": "CMN-NET-SPEC-002",
+      "to": "CMN-ARCH-SPEC-002",
+      "type": "depends_on"
+    },
+    {
+      "from": "CMN-NET-SPEC-002",
+      "to": "CMN-SEC-SPEC-002",
+      "type": "depends_on"
+    },
+    {
+      "from": "CMN-SYNC-SPEC-001",
+      "to": "CMN-DATA-SPEC-001",
+      "type": "depends_on"
+    },
+    {
+      "from": "CMN-SYNC-SPEC-001",
+      "to": "CMN-PRV-SPEC-002",
+      "type": "depends_on"
+    },
+    {
+      "from": "CMN-SEC-BASE-001",
+      "to": "CMN-GOV-STD-002",
+      "type": "depends_on"
+    },
+    {
+      "from": "CMN-SEC-SPEC-001",
+      "to": "CMN-SEC-BASE-001",
+      "type": "depends_on"
+    },
+    {
+      "from": "CMN-SEC-SPEC-002",
+      "to": "CMN-SEC-BASE-001",
+      "type": "depends_on"
+    },
+    {
+      "from": "CMN-SEC-SPEC-002",
+      "to": "CMN-NET-SPEC-002",
+      "type": "depends_on"
+    },
+    {
+      "from": "CMN-SEC-SPEC-003",
+      "to": "CMN-SEC-SPEC-001",
+      "type": "depends_on"
+    },
+    {
+      "from": "CMN-PRV-SPEC-001",
+      "to": "CMN-SEC-BASE-001",
+      "type": "depends_on"
+    },
+    {
+      "from": "CMN-PRV-SPEC-002",
+      "to": "CMN-PRV-SPEC-001",
+      "type": "depends_on"
+    },
+    {
+      "from": "CMN-MOD-SPEC-001",
+      "to": "CMN-AUD-SPEC-002",
+      "type": "depends_on"
+    },
+    {
+      "from": "CMN-MOD-SPEC-001",
+      "to": "CMN-PRV-SPEC-002",
+      "type": "depends_on"
+    },
+    {
+      "from": "CMN-DATA-SPEC-001",
+      "to": "CMN-PRV-SPEC-002",
+      "type": "depends_on"
+    },
+    {
+      "from": "CMN-DATA-SPEC-002",
+      "to": "CMN-DATA-SPEC-001",
+      "type": "depends_on"
+    },
+    {
+      "from": "CMN-DATA-SPEC-003",
+      "to": "CMN-AUD-SPEC-002",
+      "type": "depends_on"
+    },
+    {
+      "from": "CMN-DATA-SPEC-004",
+      "to": "CMN-AUD-SPEC-001",
+      "type": "depends_on"
+    },
+    {
+      "from": "CMN-DATA-SPEC-005",
+      "to": "CMN-DATA-SPEC-003",
+      "type": "depends_on"
+    },
+    {
+      "from": "CMN-UI-ARCH-001",
+      "to": "CMN-SEC-SPEC-001",
+      "type": "depends_on"
+    },
+    {
+      "from": "CMN-UI-ARCH-001",
+      "to": "CMN-PRV-SPEC-001",
+      "type": "depends_on"
+    },
+    {
+      "from": "CMN-UI-SPEC-001",
+      "to": "CMN-UI-ARCH-001",
+      "type": "depends_on"
+    },
+    {
+      "from": "CMN-UI-SPEC-002",
+      "to": "CMN-SCM-STD-001",
+      "type": "depends_on"
+    },
+    {
+      "from": "CMN-UI-SPEC-003",
+      "to": "CMN-SEC-SPEC-001",
+      "type": "depends_on"
+    },
+    {
+      "from": "CMN-UI-SPEC-003",
+      "to": "CMN-PRV-SPEC-002",
+      "type": "depends_on"
+    },
+    {
+      "from": "CMN-UI-SPEC-003",
+      "to": "CMN-DATA-SPEC-003",
+      "type": "depends_on"
+    },
+    {
+      "from": "CMN-UI-SPEC-004",
+      "to": "CMN-PRV-SPEC-001",
+      "type": "depends_on"
+    },
+    {
+      "from": "CMN-UI-SPEC-004",
+      "to": "CMN-UI-SPEC-003",
+      "type": "depends_on"
+    },
+    {
+      "from": "CMN-UI-SPEC-005",
+      "to": "CMN-DATA-SPEC-004",
+      "type": "depends_on"
+    },
+    {
+      "from": "CMN-UI-SPEC-005",
+      "to": "CMN-AUD-SPEC-002",
+      "type": "depends_on"
+    },
+    {
+      "from": "CMN-UI-SPEC-006",
+      "to": "CMN-PRV-SPEC-002",
+      "type": "depends_on"
+    },
+    {
+      "from": "CMN-REQ-MAT-001",
+      "to": "CMN-GOV-STD-001",
+      "type": "depends_on"
+    },
+    {
+      "from": "CMN-RISK-REG-001",
+      "to": "CMN-REQ-MAT-001",
+      "type": "depends_on"
+    },
+    {
+      "from": "CMN-IMP-PLAN-001",
+      "to": "CMN-REL-SPEC-001",
+      "type": "depends_on"
+    },
+    {
+      "from": "CMN-IMP-PLAN-001",
+      "to": "CMN-RISK-REG-001",
+      "type": "depends_on"
+    },
+    {
+      "from": "CMN-REQ-GOV-001",
+      "to": "CMN-REQ-MAT-001",
+      "type": "source_document"
+    },
+    {
+      "from": "CMN-REQ-GOV-002",
+      "to": "CMN-REQ-MAT-001",
+      "type": "source_document"
+    },
+    {
+      "from": "CMN-REQ-GOV-003",
+      "to": "CMN-REQ-MAT-001",
+      "type": "source_document"
+    },
+    {
+      "from": "CMN-REQ-GOV-004",
+      "to": "CMN-REQ-MAT-001",
+      "type": "source_document"
+    },
+    {
+      "from": "CMN-REQ-GOV-005",
+      "to": "CMN-REQ-MAT-001",
+      "type": "source_document"
+    },
+    {
+      "from": "CMN-REQ-PATH-001",
+      "to": "CMN-REQ-MAT-001",
+      "type": "source_document"
+    },
+    {
+      "from": "CMN-REQ-AUD-001",
+      "to": "CMN-REQ-MAT-001",
+      "type": "source_document"
+    },
+    {
+      "from": "CMN-REQ-AUD-002",
+      "to": "CMN-REQ-MAT-001",
+      "type": "source_document"
+    },
+    {
+      "from": "CMN-REQ-ARCH-001",
+      "to": "CMN-REQ-MAT-001",
+      "type": "source_document"
+    },
+    {
+      "from": "CMN-REQ-ARCH-002",
+      "to": "CMN-REQ-MAT-001",
+      "type": "source_document"
+    },
+    {
+      "from": "CMN-REQ-ARCH-003",
+      "to": "CMN-REQ-MAT-001",
+      "type": "source_document"
+    },
+    {
+      "from": "CMN-REQ-ARCH-004",
+      "to": "CMN-REQ-MAT-001",
+      "type": "source_document"
+    },
+    {
+      "from": "CMN-REQ-ARCH-005",
+      "to": "CMN-REQ-MAT-001",
+      "type": "source_document"
+    },
+    {
+      "from": "CMN-REQ-SEC-001",
+      "to": "CMN-REQ-MAT-001",
+      "type": "source_document"
+    },
+    {
+      "from": "CMN-REQ-SEC-002",
+      "to": "CMN-REQ-MAT-001",
+      "type": "source_document"
+    },
+    {
+      "from": "CMN-REQ-SEC-003",
+      "to": "CMN-REQ-MAT-001",
+      "type": "source_document"
+    },
+    {
+      "from": "CMN-REQ-SEC-004",
+      "to": "CMN-REQ-MAT-001",
+      "type": "source_document"
+    },
+    {
+      "from": "CMN-REQ-SEC-005",
+      "to": "CMN-REQ-MAT-001",
+      "type": "source_document"
+    },
+    {
+      "from": "CMN-REQ-PRV-001",
+      "to": "CMN-REQ-MAT-001",
+      "type": "source_document"
+    },
+    {
+      "from": "CMN-REQ-PRV-002",
+      "to": "CMN-REQ-MAT-001",
+      "type": "source_document"
+    },
+    {
+      "from": "CMN-REQ-PRV-003",
+      "to": "CMN-REQ-MAT-001",
+      "type": "source_document"
+    },
+    {
+      "from": "CMN-REQ-DATA-001",
+      "to": "CMN-REQ-MAT-001",
+      "type": "source_document"
+    },
+    {
+      "from": "CMN-REQ-DATA-002",
+      "to": "CMN-REQ-MAT-001",
+      "type": "source_document"
+    },
+    {
+      "from": "CMN-REQ-DATA-003",
+      "to": "CMN-REQ-MAT-001",
+      "type": "source_document"
+    },
+    {
+      "from": "CMN-REQ-DATA-004",
+      "to": "CMN-REQ-MAT-001",
+      "type": "source_document"
+    },
+    {
+      "from": "CMN-REQ-DATA-005",
+      "to": "CMN-REQ-MAT-001",
+      "type": "source_document"
+    },
+    {
+      "from": "CMN-REQ-UI-001",
+      "to": "CMN-REQ-MAT-001",
+      "type": "source_document"
+    },
+    {
+      "from": "CMN-REQ-UI-002",
+      "to": "CMN-REQ-MAT-001",
+      "type": "source_document"
+    },
+    {
+      "from": "CMN-REQ-UI-003",
+      "to": "CMN-REQ-MAT-001",
+      "type": "source_document"
+    },
+    {
+      "from": "CMN-REQ-UI-004",
+      "to": "CMN-REQ-MAT-001",
+      "type": "source_document"
+    },
+    {
+      "from": "CMN-REQ-UI-005",
+      "to": "CMN-REQ-MAT-001",
+      "type": "source_document"
+    },
+    {
+      "from": "CMN-REQ-UI-006",
+      "to": "CMN-REQ-MAT-001",
+      "type": "source_document"
+    },
+    {
+      "from": "CMN-REQ-ONB-001",
+      "to": "CMN-UI-SPEC-001",
+      "type": "source_document"
+    },
+    {
+      "from": "CMN-REQ-ONB-002",
+      "to": "CMN-UI-SPEC-001",
+      "type": "source_document"
+    },
+    {
+      "from": "CMN-REQ-ONB-003",
+      "to": "CMN-UI-SPEC-001",
+      "type": "source_document"
+    },
+    {
+      "from": "CMN-REQ-ONB-004",
+      "to": "CMN-UI-SPEC-001",
+      "type": "source_document"
+    },
+    {
+      "from": "CMN-REQ-ONB-005",
+      "to": "CMN-UI-SPEC-001",
+      "type": "source_document"
+    },
+    {
+      "from": "CMN-REQ-ONB-006",
+      "to": "CMN-UI-SPEC-001",
+      "type": "source_document"
+    },
+    {
+      "from": "CMN-REQ-ONB-007",
+      "to": "CMN-UI-SPEC-001",
+      "type": "source_document"
+    },
+    {
+      "from": "CMN-REQ-ONB-008",
+      "to": "CMN-UI-SPEC-001",
+      "type": "source_document"
+    },
+    {
+      "from": "CMN-REQ-ONB-009",
+      "to": "CMN-UI-SPEC-001",
+      "type": "source_document"
+    },
+    {
+      "from": "CMN-REQ-ONB-010",
+      "to": "CMN-UI-SPEC-001",
+      "type": "source_document"
+    },
+    {
+      "from": "CMN-REQ-ONB-011",
+      "to": "CMN-UI-SPEC-001",
+      "type": "source_document"
+    },
+    {
+      "from": "CMN-REQ-ONB-012",
+      "to": "CMN-UI-SPEC-001",
+      "type": "source_document"
+    },
+    {
+      "from": "CMN-REQ-ONB-013",
+      "to": "CMN-UI-SPEC-001",
+      "type": "source_document"
+    },
+    {
+      "from": "CMN-REQ-ONB-014",
+      "to": "CMN-UI-SPEC-001",
+      "type": "source_document"
+    },
+    {
+      "from": "CMN-REQ-ONB-015",
+      "to": "CMN-UI-SPEC-001",
+      "type": "source_document"
+    },
+    {
+      "from": "CMN-REQ-ONB-016",
+      "to": "CMN-UI-SPEC-001",
+      "type": "source_document"
+    },
+    {
+      "from": "CMN-REQ-ONB-017",
+      "to": "CMN-UI-SPEC-001",
+      "type": "source_document"
+    },
+    {
+      "from": "CMN-REQ-ONB-018",
+      "to": "CMN-UI-SPEC-001",
+      "type": "source_document"
+    },
+    {
+      "from": "CMN-REQ-ONB-019",
+      "to": "CMN-UI-SPEC-001",
+      "type": "source_document"
+    },
+    {
+      "from": "CMN-REQ-ONB-020",
+      "to": "CMN-UI-SPEC-001",
+      "type": "source_document"
+    },
+    {
+      "from": "CMN-REQ-ONB-021",
+      "to": "CMN-UI-SPEC-001",
+      "type": "source_document"
+    },
+    {
+      "from": "CMN-REQ-ONB-022",
+      "to": "CMN-UI-SPEC-001",
+      "type": "source_document"
+    },
+    {
+      "from": "CMN-REQ-ONB-023",
+      "to": "CMN-UI-SPEC-001",
+      "type": "source_document"
+    },
+    {
+      "from": "CMN-REQ-ONB-024",
+      "to": "CMN-UI-SPEC-001",
+      "type": "source_document"
+    },
+    {
+      "from": "CMN-REQ-ONB-025",
+      "to": "CMN-UI-SPEC-001",
+      "type": "source_document"
+    },
+    {
+      "from": "CMN-REQ-ONB-026",
+      "to": "CMN-UI-SPEC-001",
+      "type": "source_document"
+    },
+    {
+      "from": "CMN-REQ-ONB-027",
+      "to": "CMN-UI-SPEC-001",
+      "type": "source_document"
+    },
+    {
+      "from": "CMN-REQ-ONB-028",
+      "to": "CMN-UI-SPEC-001",
+      "type": "source_document"
+    },
+    {
+      "from": "CMN-REQ-ONB-029",
+      "to": "CMN-UI-SPEC-001",
+      "type": "source_document"
+    },
+    {
+      "from": "CMN-REQ-ONB-030",
+      "to": "CMN-UI-SPEC-001",
+      "type": "source_document"
+    },
+    {
+      "from": "CMN-REQ-ONB-031",
+      "to": "CMN-UI-SPEC-001",
+      "type": "source_document"
+    },
+    {
+      "from": "CMN-REQ-ONB-032",
+      "to": "CMN-UI-SPEC-001",
+      "type": "source_document"
+    },
+    {
+      "from": "CMN-REQ-ONB-033",
+      "to": "CMN-UI-SPEC-001",
+      "type": "source_document"
+    },
+    {
+      "from": "CMN-REQ-ONB-034",
+      "to": "CMN-UI-SPEC-001",
+      "type": "source_document"
+    },
+    {
+      "from": "CMN-REQ-ONB-035",
+      "to": "CMN-UI-SPEC-001",
+      "type": "source_document"
+    },
+    {
+      "from": "CMN-REQ-ONB-036",
+      "to": "CMN-UI-SPEC-001",
+      "type": "source_document"
+    }
+  ],
+  "netux_catena_added": true,
+  "package": "20260508_00_CommNetPrecode",
+  "schema": "cmn.cross_refs.v0"
+}

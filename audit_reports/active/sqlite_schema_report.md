@@ -1,0 +1,3 @@
+# SQLite Schema Report
+
+PASS

@@ -1,0 +1,46 @@
+{
+  "schema": "cmn.comm_failure_modes.v0",
+  "package": "20260508_00_BackboneReqs",
+  "failure_modes": [
+    {
+      "id": "dependency_missing",
+      "mitigation": "adapter reports not_installed; UI stays available"
+    },
+    {
+      "id": "hardware_missing",
+      "mitigation": "adapter reports hardware_missing; setup gives guidance"
+    },
+    {
+      "id": "config_missing",
+      "mitigation": "adapter reports not_configured; wizard opens relevant profile setup"
+    },
+    {
+      "id": "peer_unreachable",
+      "mitigation": "bounded retries then deferred delivery if allowed"
+    },
+    {
+      "id": "queue_overflow",
+      "mitigation": "backpressure, drop/defer by priority and audit event"
+    },
+    {
+      "id": "network_flood_risk",
+      "mitigation": "rate limits, TTL/hop controls, duplicate suppression"
+    },
+    {
+      "id": "large_file_low_bandwidth_misroute",
+      "mitigation": "route policy disallows large files over low-bandwidth adapters"
+    },
+    {
+      "id": "adapter_repeated_failure",
+      "mitigation": "circuit breaker and cooldown"
+    },
+    {
+      "id": "privacy_policy_violation",
+      "mitigation": "policy gate blocks before adapter send"
+    },
+    {
+      "id": "ui_freeze",
+      "mitigation": "no blocking calls on UI path; worker queue boundaries"
+    }
+  ]
+}

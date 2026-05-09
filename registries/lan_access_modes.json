@@ -1,0 +1,7 @@
+{
+  "default": "localhost_only",
+  "modes": [
+    "localhost_only",
+    "lan_visible"
+  ]
+}

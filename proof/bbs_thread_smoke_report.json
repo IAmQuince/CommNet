@@ -1,0 +1,12 @@
+{
+  "checks": {
+    "boards_seeded": true,
+    "reply_created": true,
+    "thread_created": true,
+    "welcome_thread_seeded": true
+  },
+  "extra": {
+    "thread_id": "thread_af20cc0aad57"
+  },
+  "status": "PASS"
+}

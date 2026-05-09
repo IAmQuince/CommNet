@@ -1,0 +1,3 @@
+# Message Class Report
+
+PASS

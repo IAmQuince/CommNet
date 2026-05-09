@@ -1,0 +1,12 @@
+{
+  "checks": {
+    "admin_has_switch_to_portal": true,
+    "admin_uses_admin_shell": true,
+    "portal_has_sidebar": true,
+    "portal_not_admin_area": true,
+    "portal_uses_portal_shell": true,
+    "server_ready": true
+  },
+  "extra": {},
+  "status": "PASS"
+}

@@ -1,0 +1,21 @@
+{
+  "allowed_text": "letters numbers spaces hyphen underscore period apostrophe parentheses comma colon slash backslash",
+  "limits": {
+    "admin_display_name": {
+      "max": 64,
+      "min": 1
+    },
+    "file_root_path": {
+      "max": 260,
+      "min": 1
+    },
+    "node_description": {
+      "max": 500,
+      "min": 0
+    },
+    "node_name": {
+      "max": 64,
+      "min": 3
+    }
+  }
+}

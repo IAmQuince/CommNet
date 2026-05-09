@@ -1,0 +1,60 @@
+{
+  "package_class": "USABILITY_HUD_READY_WITH_DEBT",
+  "settings": {
+    "theme": [
+      "light",
+      "dark",
+      "auto"
+    ],
+    "nav_style": [
+      "top",
+      "rail",
+      "hybrid"
+    ],
+    "card_density": [
+      "comfortable",
+      "compact",
+      "dense"
+    ],
+    "color_coding": [
+      true,
+      false
+    ],
+    "icon_mode": [
+      "emoji",
+      "text",
+      "simple"
+    ],
+    "show_advanced_cards": [
+      true,
+      false
+    ],
+    "show_demo_services": [
+      true,
+      false
+    ],
+    "show_simulated_devices": [
+      true,
+      false
+    ],
+    "hud_diagnostics": [
+      "hidden",
+      "summary",
+      "full"
+    ],
+    "admin_home": [
+      "hud",
+      "shares",
+      "network",
+      "users"
+    ],
+    "guest_card_style": [
+      "simple",
+      "detailed"
+    ],
+    "show_unavailable_guest_apps": [
+      "hidden",
+      "grayed"
+    ]
+  }
+}

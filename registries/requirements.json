@@ -1,0 +1,1049 @@
+{
+  "requirements": [
+    {
+      "id": "CMN-REQ-ARCH-001",
+      "implementation_target": "future_src_commnet",
+      "rationale": "The core concept is a community internet that can work locally.",
+      "source_document": "CMN-REQ-MAT-001",
+      "statement": "CommNet shall be local-first and shall remain useful without public internet access.",
+      "status": "READY_FOR_REVIEW",
+      "test_target": "future_tests_or_audit",
+      "verification": "architecture review and future offline functional tests"
+    },
+    {
+      "id": "CMN-REQ-ARCH-002",
+      "implementation_target": "future_src_commnet",
+      "rationale": "Homes, schools, libraries, and neighborhoods may use different devices and operating systems.",
+      "source_document": "CMN-REQ-MAT-001",
+      "statement": "CommNet shall be hardware- and software-agnostic at the core model level.",
+      "status": "READY_FOR_REVIEW",
+      "test_target": "future_tests_or_audit",
+      "verification": "adapter architecture review"
+    },
+    {
+      "id": "CMN-REQ-ARCH-003",
+      "implementation_target": "future_src_commnet",
+      "rationale": "A laptop, server, Raspberry Pi, NAS, or school PC may perform similar roles.",
+      "source_document": "CMN-REQ-MAT-001",
+      "statement": "CommNet shall distinguish node roles from physical hardware types.",
+      "status": "READY_FOR_REVIEW",
+      "test_target": "future_tests_or_audit",
+      "verification": "node role registry review"
+    },
+    {
+      "id": "CMN-REQ-ARCH-004",
+      "implementation_target": "future_src_commnet",
+      "rationale": "Prevents overclaiming true mesh behavior and clarifies trust boundaries.",
+      "source_document": "CMN-REQ-MAT-001",
+      "statement": "CommNet shall separate local portal, local services, peer links, replication, and optional public gateway exposure.",
+      "status": "READY_FOR_REVIEW",
+      "test_target": "future_tests_or_audit",
+      "verification": "architecture review"
+    },
+    {
+      "id": "CMN-REQ-ARCH-005",
+      "implementation_target": "future_src_commnet",
+      "rationale": "Gateway exposure changes the threat model.",
+      "source_document": "CMN-REQ-MAT-001",
+      "statement": "Public internet gateway exposure shall be optional and disabled by default.",
+      "status": "READY_FOR_REVIEW",
+      "test_target": "future_tests_or_audit",
+      "verification": "security review and future config tests"
+    },
+    {
+      "id": "CMN-REQ-AUD-001",
+      "implementation_target": "future_src_commnet",
+      "rationale": "Makes the package reviewable without trusting narrative statements.",
+      "source_document": "CMN-REQ-MAT-001",
+      "statement": "The package shall include audit scripts for package shape, path length, document metadata, registries, and implementation-claim scanning.",
+      "status": "READY_FOR_REVIEW",
+      "test_target": "future_tests_or_audit",
+      "verification": "audit_package.py"
+    },
+    {
+      "id": "CMN-REQ-AUD-002",
+      "implementation_target": "future_src_commnet",
+      "rationale": "Keeps evidence separate from controlled docs and source.",
+      "source_document": "CMN-REQ-MAT-001",
+      "statement": "Audit reports shall be generated under audit_reports/active and proof evidence under proof/.",
+      "status": "READY_FOR_REVIEW",
+      "test_target": "future_tests_or_audit",
+      "verification": "audit_package.py"
+    },
+    {
+      "id": "CMN-REQ-BT-001",
+      "implementation_target": "future_src_commnet_transport",
+      "rationale": "Short-range phone/device workflows may need Bluetooth.",
+      "source_document": "CMN-NET-SPEC-007",
+      "statement": "CommNet shall support Bluetooth through an optional adapter profile.",
+      "status": "READY_FOR_REVIEW",
+      "test_target": "future_tests_or_audit",
+      "verification": "transport registry audit"
+    },
+    {
+      "id": "CMN-REQ-DATA-001",
+      "implementation_target": "future_src_commnet",
+      "rationale": "Maintains integrity when files move, duplicate, or get reviewed.",
+      "source_document": "CMN-REQ-MAT-001",
+      "statement": "The file registry shall use stable IDs, content hashes, source attribution, timestamps, owner/source fields, paths, tags, review state, and visibility flags.",
+      "status": "READY_FOR_REVIEW",
+      "test_target": "future_tests_or_audit",
+      "verification": "schema review and future registry tests"
+    },
+    {
+      "id": "CMN-REQ-DATA-002",
+      "implementation_target": "future_src_commnet",
+      "rationale": "Prevents file modification and supports backup/restore.",
+      "source_document": "CMN-REQ-MAT-001",
+      "statement": "Metadata shall remain separable from original files and shall be snapshot/export capable.",
+      "status": "READY_FOR_REVIEW",
+      "test_target": "future_tests_or_audit",
+      "verification": "future registry export tests"
+    },
+    {
+      "id": "CMN-REQ-DATA-003",
+      "implementation_target": "future_src_commnet",
+      "rationale": "Supports rollback and accountability.",
+      "source_document": "CMN-REQ-MAT-001",
+      "statement": "Configuration changes shall create versioned snapshots and audit entries.",
+      "status": "READY_FOR_REVIEW",
+      "test_target": "future_tests_or_audit",
+      "verification": "future config tests"
+    },
+    {
+      "id": "CMN-REQ-DATA-004",
+      "implementation_target": "future_src_commnet",
+      "rationale": "Deletion semantics matter in replicated systems.",
+      "source_document": "CMN-REQ-MAT-001",
+      "statement": "Destructive actions shall distinguish hide, local delete, cache purge, registry removal, tombstone, and takedown request.",
+      "status": "READY_FOR_REVIEW",
+      "test_target": "future_tests_or_audit",
+      "verification": "future policy and UX tests"
+    },
+    {
+      "id": "CMN-REQ-DATA-005",
+      "implementation_target": "future_src_commnet",
+      "rationale": "Diagnostics must not leak private data.",
+      "source_document": "CMN-REQ-MAT-001",
+      "statement": "Support bundles shall redact sensitive values by default and shall declare what was included.",
+      "status": "READY_FOR_REVIEW",
+      "test_target": "future_tests_or_audit",
+      "verification": "future support bundle tests"
+    },
+    {
+      "id": "CMN-REQ-DIAG-001",
+      "implementation_target": "future_src_commnet_transport",
+      "rationale": "Users need clear explanations when a path fails.",
+      "source_document": "CMN-DIAG-SPEC-001",
+      "statement": "CommNet shall expose adapter status, dependency status, route decisions, queue depth, and recent communication faults in diagnostics.",
+      "status": "READY_FOR_REVIEW",
+      "test_target": "future_tests_or_audit",
+      "verification": "diagnostic registry and future UI test"
+    },
+    {
+      "id": "CMN-REQ-GOV-001",
+      "implementation_target": "future_src_commnet",
+      "rationale": "Prevents uncontrolled documents and ambiguous references.",
+      "source_document": "CMN-REQ-MAT-001",
+      "statement": "Every controlled document shall have a unique document_id, revision, status, classification, and package_class metadata block.",
+      "status": "READY_FOR_REVIEW",
+      "test_target": "future_tests_or_audit",
+      "verification": "check_doc_ids.py"
+    },
+    {
+      "id": "CMN-REQ-GOV-002",
+      "implementation_target": "future_src_commnet",
+      "rationale": "Supports durable cross-referencing from requirements, tests, audits, and future code.",
+      "source_document": "CMN-REQ-MAT-001",
+      "statement": "Every controlled document shall use stable section identifiers in the form [SEC:DOC-ID::N].",
+      "status": "READY_FOR_REVIEW",
+      "test_target": "future_tests_or_audit",
+      "verification": "check_doc_ids.py"
+    },
+    {
+      "id": "CMN-REQ-GOV-003",
+      "implementation_target": "future_src_commnet",
+      "rationale": "Allows revision history and evidence without overwriting prior records.",
+      "source_document": "CMN-REQ-MAT-001",
+      "statement": "The package shall include active and archive areas for documents and audit reports.",
+      "status": "READY_FOR_REVIEW",
+      "test_target": "future_tests_or_audit",
+      "verification": "check_package_shape.py"
+    },
+    {
+      "id": "CMN-REQ-GOV-004",
+      "implementation_target": "future_src_commnet",
+      "rationale": "Allows automated consistency checks.",
+      "source_document": "CMN-REQ-MAT-001",
+      "statement": "The package shall include a machine-readable document registry matching active controlled documents.",
+      "status": "READY_FOR_REVIEW",
+      "test_target": "future_tests_or_audit",
+      "verification": "check_registry_sync.py"
+    },
+    {
+      "id": "CMN-REQ-GOV-005",
+      "implementation_target": "future_src_commnet",
+      "rationale": "Prevents false readiness claims.",
+      "source_document": "CMN-REQ-MAT-001",
+      "statement": "The package shall state its package class and shall not claim implemented product behavior in a pre-code baseline.",
+      "status": "READY_FOR_REVIEW",
+      "test_target": "future_tests_or_audit",
+      "verification": "audit_package.py"
+    },
+    {
+      "id": "CMN-REQ-INST-001",
+      "implementation_target": "future_src_commnet_transport",
+      "rationale": "Users should not have to solve internet dependency problems during setup.",
+      "source_document": "CMN-INST-SPEC-001",
+      "statement": "CommNet shall support offline dependency installation from a flash-drive wheelhouse.",
+      "status": "READY_FOR_REVIEW",
+      "test_target": "future_tests_or_audit",
+      "verification": "wheelhouse audit"
+    },
+    {
+      "id": "CMN-REQ-INST-002",
+      "implementation_target": "future_src_commnet_transport",
+      "rationale": "Accessibility and troubleshooting require the UI to open first.",
+      "source_document": "CMN-SW-REQ-002",
+      "statement": "The local configuration UI shall launch even when optional hardware/backbone libraries are missing.",
+      "status": "READY_FOR_REVIEW",
+      "test_target": "future_tests_or_audit",
+      "verification": "future import isolation tests"
+    },
+    {
+      "id": "CMN-REQ-LAN-001",
+      "implementation_target": "future_src_commnet_transport",
+      "rationale": "Nearby devices need a high-bandwidth path.",
+      "source_document": "CMN-NET-SPEC-006",
+      "statement": "CommNet shall provide LAN/Wi-Fi HTTP transport for local high-bandwidth communication.",
+      "status": "READY_FOR_IMPLEMENTATION",
+      "test_target": "future_tests_or_audit",
+      "verification": "transport registry audit"
+    },
+    {
+      "id": "CMN-REQ-MESH-001",
+      "implementation_target": "future_src_commnet_transport",
+      "rationale": "Meshtastic is a critical backbone for practical LoRa devices.",
+      "source_document": "CMN-NET-SPEC-004",
+      "statement": "CommNet shall provide first-class Meshtastic support for LoRa-capable deployments.",
+      "status": "READY_FOR_IMPLEMENTATION",
+      "test_target": "future_tests_or_audit",
+      "verification": "dependency/profile/adapter registry audit"
+    },
+    {
+      "id": "CMN-REQ-MESH-002",
+      "implementation_target": "future_src_commnet_transport",
+      "rationale": "Reticulum is a general-purpose resilient backbone candidate.",
+      "source_document": "CMN-NET-SPEC-005",
+      "statement": "CommNet shall provide first-class Reticulum support for resilient mesh/backbone deployments.",
+      "status": "READY_FOR_REVIEW",
+      "test_target": "future_tests_or_audit",
+      "verification": "dependency/profile/adapter registry audit"
+    },
+    {
+      "id": "CMN-REQ-MESH-003",
+      "implementation_target": "future_src_commnet_transport",
+      "rationale": "LXMF provides message-layer behavior over Reticulum.",
+      "source_document": "CMN-NET-SPEC-005",
+      "statement": "CommNet shall provide LXMF support for Reticulum-based messaging.",
+      "status": "READY_FOR_REVIEW",
+      "test_target": "future_tests_or_audit",
+      "verification": "dependency/profile/adapter registry audit"
+    },
+    {
+      "id": "CMN-REQ-ONB-001",
+      "implementation_target": "future_src_commnet",
+      "rationale": "First-run guided entry point for nontechnical users and admins. Output: Creates onboarding session and next-step checklist.",
+      "source_document": "CMN-UI-SPEC-001",
+      "statement": "CommNet onboarding shall define the Start Here as a first-class setup or operations tool.",
+      "status": "READY_FOR_REVIEW",
+      "test_target": "future_tests_or_audit",
+      "verification": "onboarding_tools.json review"
+    },
+    {
+      "id": "CMN-REQ-ONB-002",
+      "implementation_target": "future_src_commnet",
+      "rationale": "Checks Python, OS, permissions, disk, and network readiness. Output: Readiness report.",
+      "source_document": "CMN-UI-SPEC-001",
+      "statement": "CommNet onboarding shall define the Install Check as a first-class setup or operations tool.",
+      "status": "READY_FOR_REVIEW",
+      "test_target": "future_tests_or_audit",
+      "verification": "onboarding_tools.json review"
+    },
+    {
+      "id": "CMN-REQ-ONB-003",
+      "implementation_target": "future_src_commnet",
+      "rationale": "Confirms package files, hashes, manifest, versions, and path lengths. Output: Integrity report.",
+      "source_document": "CMN-UI-SPEC-001",
+      "statement": "CommNet onboarding shall define the Package Verifier as a first-class setup or operations tool.",
+      "status": "READY_FOR_REVIEW",
+      "test_target": "future_tests_or_audit",
+      "verification": "onboarding_tools.json review"
+    },
+    {
+      "id": "CMN-REQ-ONB-004",
+      "implementation_target": "future_src_commnet",
+      "rationale": "Creates local runtime folders and separates local state from source packages. Output: Runtime scaffold.",
+      "source_document": "CMN-UI-SPEC-001",
+      "statement": "CommNet onboarding shall define the Runtime Setup as a first-class setup or operations tool.",
+      "status": "READY_FOR_REVIEW",
+      "test_target": "future_tests_or_audit",
+      "verification": "onboarding_tools.json review"
+    },
+    {
+      "id": "CMN-REQ-ONB-005",
+      "implementation_target": "future_src_commnet",
+      "rationale": "Selects home, school, library, makerspace, neighborhood, or emergency preset. Output: Initial policy profile.",
+      "source_document": "CMN-UI-SPEC-001",
+      "statement": "CommNet onboarding shall define the Profile Preset Selector as a first-class setup or operations tool.",
+      "status": "READY_FOR_REVIEW",
+      "test_target": "future_tests_or_audit",
+      "verification": "onboarding_tools.json review"
+    },
+    {
+      "id": "CMN-REQ-ONB-006",
+      "implementation_target": "future_src_commnet",
+      "rationale": "Defines this machine as portal, storage, admin, gateway, client, peer, or hybrid. Output: Node role config.",
+      "source_document": "CMN-UI-SPEC-001",
+      "statement": "CommNet onboarding shall define the Node Role Wizard as a first-class setup or operations tool.",
+      "status": "READY_FOR_REVIEW",
+      "test_target": "future_tests_or_audit",
+      "verification": "onboarding_tools.json review"
+    },
+    {
+      "id": "CMN-REQ-ONB-007",
+      "implementation_target": "future_src_commnet",
+      "rationale": "Creates local identities, admin accounts, and recovery artifacts. Output: Identity record.",
+      "source_document": "CMN-UI-SPEC-001",
+      "statement": "CommNet onboarding shall define the Local Identity Wizard as a first-class setup or operations tool.",
+      "status": "READY_FOR_REVIEW",
+      "test_target": "future_tests_or_audit",
+      "verification": "onboarding_tools.json review"
+    },
+    {
+      "id": "CMN-REQ-ONB-008",
+      "implementation_target": "future_src_commnet",
+      "rationale": "Controls whether the user or node appears on the community web. Output: Visibility policy.",
+      "source_document": "CMN-UI-SPEC-001",
+      "statement": "CommNet onboarding shall define the Visibility Wizard as a first-class setup or operations tool.",
+      "status": "READY_FOR_REVIEW",
+      "test_target": "future_tests_or_audit",
+      "verification": "onboarding_tools.json review"
+    },
+    {
+      "id": "CMN-REQ-ONB-009",
+      "implementation_target": "future_src_commnet",
+      "rationale": "Sets personal, household, student, staff, public-local, or organization privacy boundaries. Output: Privacy policy.",
+      "source_document": "CMN-UI-SPEC-001",
+      "statement": "CommNet onboarding shall define the Privacy Wizard as a first-class setup or operations tool.",
+      "status": "READY_FOR_REVIEW",
+      "test_target": "future_tests_or_audit",
+      "verification": "onboarding_tools.json review"
+    },
+    {
+      "id": "CMN-REQ-ONB-010",
+      "implementation_target": "future_src_commnet",
+      "rationale": "Defines what may be shared, cached, copied, discovered, or published. Output: Sharing rules.",
+      "source_document": "CMN-UI-SPEC-001",
+      "statement": "CommNet onboarding shall define the Sharing Policy Builder as a first-class setup or operations tool.",
+      "status": "READY_FOR_REVIEW",
+      "test_target": "future_tests_or_audit",
+      "verification": "onboarding_tools.json review"
+    },
+    {
+      "id": "CMN-REQ-ONB-011",
+      "implementation_target": "future_src_commnet",
+      "rationale": "Engineers roles, groups, approvals, admin powers, and command boundaries. Output: Permission matrix.",
+      "source_document": "CMN-UI-SPEC-001",
+      "statement": "CommNet onboarding shall define the Roles and Permissions Console as a first-class setup or operations tool.",
+      "status": "READY_FOR_REVIEW",
+      "test_target": "future_tests_or_audit",
+      "verification": "onboarding_tools.json review"
+    },
+    {
+      "id": "CMN-REQ-ONB-012",
+      "implementation_target": "future_src_commnet",
+      "rationale": "Tests who can see or do what before policy changes are applied. Output: Simulation report.",
+      "source_document": "CMN-UI-SPEC-001",
+      "statement": "CommNet onboarding shall define the Policy Simulator as a first-class setup or operations tool.",
+      "status": "READY_FOR_REVIEW",
+      "test_target": "future_tests_or_audit",
+      "verification": "onboarding_tools.json review"
+    },
+    {
+      "id": "CMN-REQ-ONB-013",
+      "implementation_target": "future_src_commnet",
+      "rationale": "Finds reachable devices, peers, services, storage nodes, and local interfaces. Output: Device inventory.",
+      "source_document": "CMN-UI-SPEC-001",
+      "statement": "CommNet onboarding shall define the Device Discovery Tool as a first-class setup or operations tool.",
+      "status": "READY_FOR_REVIEW",
+      "test_target": "future_tests_or_audit",
+      "verification": "onboarding_tools.json review"
+    },
+    {
+      "id": "CMN-REQ-ONB-014",
+      "implementation_target": "future_src_commnet",
+      "rationale": "Adds router, PC, Pi, NAS, server, peer node, gateway, or storage device. Output: Device record.",
+      "source_document": "CMN-UI-SPEC-001",
+      "statement": "CommNet onboarding shall define the Add Device Wizard as a first-class setup or operations tool.",
+      "status": "READY_FOR_REVIEW",
+      "test_target": "future_tests_or_audit",
+      "verification": "onboarding_tools.json review"
+    },
+    {
+      "id": "CMN-REQ-ONB-015",
+      "implementation_target": "future_src_commnet",
+      "rationale": "Guides LAN, Wi-Fi, ad hoc, static IP, hostname, and service-discovery setup. Output: Network config.",
+      "source_document": "CMN-UI-SPEC-001",
+      "statement": "CommNet onboarding shall define the Network Setup Assistant as a first-class setup or operations tool.",
+      "status": "READY_FOR_REVIEW",
+      "test_target": "future_tests_or_audit",
+      "verification": "onboarding_tools.json review"
+    },
+    {
+      "id": "CMN-REQ-ONB-016",
+      "implementation_target": "future_src_commnet",
+      "rationale": "Adds peer links and verifies connectivity without assuming one transport. Output: Link records.",
+      "source_document": "CMN-UI-SPEC-001",
+      "statement": "CommNet onboarding shall define the Mesh and Peer Link Assistant as a first-class setup or operations tool.",
+      "status": "READY_FOR_REVIEW",
+      "test_target": "future_tests_or_audit",
+      "verification": "onboarding_tools.json review"
+    },
+    {
+      "id": "CMN-REQ-ONB-017",
+      "implementation_target": "future_src_commnet",
+      "rationale": "Configures optional public-internet bridge, firewall, and exposure rules. Output: Gateway policy.",
+      "source_document": "CMN-UI-SPEC-001",
+      "statement": "CommNet onboarding shall define the Gateway Boundary Tool as a first-class setup or operations tool.",
+      "status": "READY_FOR_REVIEW",
+      "test_target": "future_tests_or_audit",
+      "verification": "onboarding_tools.json review"
+    },
+    {
+      "id": "CMN-REQ-ONB-018",
+      "implementation_target": "future_src_commnet",
+      "rationale": "Enables local portal, file registry, directory, forum, wiki, search, and diagnostics services. Output: Service config.",
+      "source_document": "CMN-UI-SPEC-001",
+      "statement": "CommNet onboarding shall define the Service Manager as a first-class setup or operations tool.",
+      "status": "READY_FOR_REVIEW",
+      "test_target": "future_tests_or_audit",
+      "verification": "onboarding_tools.json review"
+    },
+    {
+      "id": "CMN-REQ-ONB-019",
+      "implementation_target": "future_src_commnet",
+      "rationale": "Scans selected folders and builds the local registry without publishing by default. Output: File index.",
+      "source_document": "CMN-UI-SPEC-001",
+      "statement": "CommNet onboarding shall define the File Registry Builder as a first-class setup or operations tool.",
+      "status": "READY_FOR_REVIEW",
+      "test_target": "future_tests_or_audit",
+      "verification": "onboarding_tools.json review"
+    },
+    {
+      "id": "CMN-REQ-ONB-020",
+      "implementation_target": "future_src_commnet",
+      "rationale": "Imports files from flash drives or local folders and records provenance. Output: Import log.",
+      "source_document": "CMN-UI-SPEC-001",
+      "statement": "CommNet onboarding shall define the Content Import Tool as a first-class setup or operations tool.",
+      "status": "READY_FOR_REVIEW",
+      "test_target": "future_tests_or_audit",
+      "verification": "onboarding_tools.json review"
+    },
+    {
+      "id": "CMN-REQ-ONB-021",
+      "implementation_target": "future_src_commnet",
+      "rationale": "Adds tags, descriptions, audience, owner, review status, and visibility flags. Output: Metadata records.",
+      "source_document": "CMN-UI-SPEC-001",
+      "statement": "CommNet onboarding shall define the Metadata Tagger as a first-class setup or operations tool.",
+      "status": "READY_FOR_REVIEW",
+      "test_target": "future_tests_or_audit",
+      "verification": "onboarding_tools.json review"
+    },
+    {
+      "id": "CMN-REQ-ONB-022",
+      "implementation_target": "future_src_commnet",
+      "rationale": "Supports review states, restrictions, block decisions, and accountability. Output: Review decisions.",
+      "source_document": "CMN-UI-SPEC-001",
+      "statement": "CommNet onboarding shall define the Review and Moderation Queue as a first-class setup or operations tool.",
+      "status": "READY_FOR_REVIEW",
+      "test_target": "future_tests_or_audit",
+      "verification": "onboarding_tools.json review"
+    },
+    {
+      "id": "CMN-REQ-ONB-023",
+      "implementation_target": "future_src_commnet",
+      "rationale": "Publishes only approved public-local or peer-visible entries. Output: Directory records.",
+      "source_document": "CMN-UI-SPEC-001",
+      "statement": "CommNet onboarding shall define the Community Directory Publisher as a first-class setup or operations tool.",
+      "status": "READY_FOR_REVIEW",
+      "test_target": "future_tests_or_audit",
+      "verification": "onboarding_tools.json review"
+    },
+    {
+      "id": "CMN-REQ-ONB-024",
+      "implementation_target": "future_src_commnet",
+      "rationale": "Creates, verifies, and restores configuration, registry, and content backups. Output: Backup set.",
+      "source_document": "CMN-UI-SPEC-001",
+      "statement": "CommNet onboarding shall define the Backup and Restore Tool as a first-class setup or operations tool.",
+      "status": "READY_FOR_REVIEW",
+      "test_target": "future_tests_or_audit",
+      "verification": "onboarding_tools.json review"
+    },
+    {
+      "id": "CMN-REQ-ONB-025",
+      "implementation_target": "future_src_commnet",
+      "rationale": "Controls which content is cached where and under what trust rules. Output: Replication policy.",
+      "source_document": "CMN-UI-SPEC-001",
+      "statement": "CommNet onboarding shall define the Sync and Replication Planner as a first-class setup or operations tool.",
+      "status": "READY_FOR_REVIEW",
+      "test_target": "future_tests_or_audit",
+      "verification": "onboarding_tools.json review"
+    },
+    {
+      "id": "CMN-REQ-ONB-026",
+      "implementation_target": "future_src_commnet",
+      "rationale": "Shows capacity, cache health, replication state, and stale content. Output: Storage report.",
+      "source_document": "CMN-UI-SPEC-001",
+      "statement": "CommNet onboarding shall define the Storage Steward Tool as a first-class setup or operations tool.",
+      "status": "READY_FOR_REVIEW",
+      "test_target": "future_tests_or_audit",
+      "verification": "onboarding_tools.json review"
+    },
+    {
+      "id": "CMN-REQ-ONB-027",
+      "implementation_target": "future_src_commnet",
+      "rationale": "Shows service health, network status, registry status, sync state, and errors. Output: Health report.",
+      "source_document": "CMN-UI-SPEC-001",
+      "statement": "CommNet onboarding shall define the Diagnostics Dashboard as a first-class setup or operations tool.",
+      "status": "READY_FOR_REVIEW",
+      "test_target": "future_tests_or_audit",
+      "verification": "onboarding_tools.json review"
+    },
+    {
+      "id": "CMN-REQ-ONB-028",
+      "implementation_target": "future_src_commnet",
+      "rationale": "Reviews changes, approvals, failures, policy changes, and exports. Output: Audit view.",
+      "source_document": "CMN-UI-SPEC-001",
+      "statement": "CommNet onboarding shall define the Audit Log Viewer as a first-class setup or operations tool.",
+      "status": "READY_FOR_REVIEW",
+      "test_target": "future_tests_or_audit",
+      "verification": "onboarding_tools.json review"
+    },
+    {
+      "id": "CMN-REQ-ONB-029",
+      "implementation_target": "future_src_commnet",
+      "rationale": "Guides passwords, firewall, local exposure, admin hygiene, and backups. Output: Security report.",
+      "source_document": "CMN-UI-SPEC-001",
+      "statement": "CommNet onboarding shall define the Security Hardening Checklist as a first-class setup or operations tool.",
+      "status": "READY_FOR_REVIEW",
+      "test_target": "future_tests_or_audit",
+      "verification": "onboarding_tools.json review"
+    },
+    {
+      "id": "CMN-REQ-ONB-030",
+      "implementation_target": "future_src_commnet",
+      "rationale": "Applies future CommNet packages while preserving runtime state. Output: Update report.",
+      "source_document": "CMN-UI-SPEC-001",
+      "statement": "CommNet onboarding shall define the Update and Package Installer as a first-class setup or operations tool.",
+      "status": "READY_FOR_REVIEW",
+      "test_target": "future_tests_or_audit",
+      "verification": "onboarding_tools.json review"
+    },
+    {
+      "id": "CMN-REQ-ONB-031",
+      "implementation_target": "future_src_commnet",
+      "rationale": "Creates a redacted diagnostic bundle for troubleshooting. Output: Support bundle.",
+      "source_document": "CMN-UI-SPEC-001",
+      "statement": "CommNet onboarding shall define the Export Support Bundle as a first-class setup or operations tool.",
+      "status": "READY_FOR_REVIEW",
+      "test_target": "future_tests_or_audit",
+      "verification": "onboarding_tools.json review"
+    },
+    {
+      "id": "CMN-REQ-ONB-032",
+      "implementation_target": "future_src_commnet",
+      "rationale": "Opens the local community portal for browsing, search, and local services. Output: Portal session.",
+      "source_document": "CMN-UI-SPEC-001",
+      "statement": "CommNet onboarding shall define the Community Web Launcher as a first-class setup or operations tool.",
+      "status": "READY_FOR_REVIEW",
+      "test_target": "future_tests_or_audit",
+      "verification": "onboarding_tools.json review"
+    },
+    {
+      "id": "CMN-REQ-ONB-033",
+      "implementation_target": "future_src_commnet",
+      "rationale": "Opens the powerful configuration platform for owners and admins. Output: Admin session.",
+      "source_document": "CMN-UI-SPEC-001",
+      "statement": "CommNet onboarding shall define the Admin Console Launcher as a first-class setup or operations tool.",
+      "status": "READY_FOR_REVIEW",
+      "test_target": "future_tests_or_audit",
+      "verification": "onboarding_tools.json review"
+    },
+    {
+      "id": "CMN-REQ-ONB-034",
+      "implementation_target": "future_src_commnet",
+      "rationale": "Runs simulated walkthroughs without changing real settings. Output: Demo state.",
+      "source_document": "CMN-UI-SPEC-001",
+      "statement": "CommNet onboarding shall define the Help and Demo Mode as a first-class setup or operations tool.",
+      "status": "READY_FOR_REVIEW",
+      "test_target": "future_tests_or_audit",
+      "verification": "onboarding_tools.json review"
+    },
+    {
+      "id": "CMN-REQ-ONB-035",
+      "implementation_target": "future_src_commnet",
+      "rationale": "Configures local notices, emergency resources, and offline operation modes. Output: Emergency profile.",
+      "source_document": "CMN-UI-SPEC-001",
+      "statement": "CommNet onboarding shall define the Emergency and Outage Mode Setup as a first-class setup or operations tool.",
+      "status": "READY_FOR_REVIEW",
+      "test_target": "future_tests_or_audit",
+      "verification": "onboarding_tools.json review"
+    },
+    {
+      "id": "CMN-REQ-ONB-036",
+      "implementation_target": "future_src_commnet",
+      "rationale": "Creates or repairs clickable launchers relative to the extracted package. Output: Launcher icons.",
+      "source_document": "CMN-UI-SPEC-001",
+      "statement": "CommNet onboarding shall define the Shortcut and Icon Manager as a first-class setup or operations tool.",
+      "status": "READY_FOR_REVIEW",
+      "test_target": "future_tests_or_audit",
+      "verification": "onboarding_tools.json review"
+    },
+    {
+      "id": "CMN-REQ-PATH-001",
+      "implementation_target": "future_src_commnet",
+      "rationale": "Prevents path length failures and tool incompatibility.",
+      "source_document": "CMN-REQ-MAT-001",
+      "statement": "Package paths should remain short enough for Windows extraction under C:\\Users\\iaq16\\Documents\\Code\\CommNet.",
+      "status": "READY_FOR_REVIEW",
+      "test_target": "future_tests_or_audit",
+      "verification": "check_paths.py"
+    },
+    {
+      "id": "CMN-REQ-PRV-001",
+      "implementation_target": "future_src_commnet",
+      "rationale": "Visibility must be intentional.",
+      "source_document": "CMN-REQ-MAT-001",
+      "statement": "A user or node shall not appear in the community directory unless visibility is explicitly enabled.",
+      "status": "READY_FOR_REVIEW",
+      "test_target": "future_tests_or_audit",
+      "verification": "future visibility tests"
+    },
+    {
+      "id": "CMN-REQ-PRV-002",
+      "implementation_target": "future_src_commnet",
+      "rationale": "Prevents misunderstanding between local visibility and public internet exposure.",
+      "source_document": "CMN-REQ-MAT-001",
+      "statement": "Visibility labels shall distinguish private local, device-local, local-network, approved-peer, and gateway-exposed states.",
+      "status": "READY_FOR_REVIEW",
+      "test_target": "future_tests_or_audit",
+      "verification": "future UX review"
+    },
+    {
+      "id": "CMN-REQ-PRV-003",
+      "implementation_target": "future_src_commnet",
+      "rationale": "Enables schools and communities to engineer repeatable configurations.",
+      "source_document": "CMN-REQ-MAT-001",
+      "statement": "Policy profiles shall be exportable, importable, and reviewable before apply.",
+      "status": "READY_FOR_REVIEW",
+      "test_target": "future_tests_or_audit",
+      "verification": "future profile tests"
+    },
+    {
+      "id": "CMN-REQ-SEC-001",
+      "implementation_target": "future_src_commnet",
+      "rationale": "UI-only restrictions are not security controls.",
+      "source_document": "CMN-REQ-MAT-001",
+      "statement": "All privacy and permission decisions shall be enforced by backend policy, not only by UI visibility.",
+      "status": "READY_FOR_REVIEW",
+      "test_target": "future_tests_or_audit",
+      "verification": "future policy engine tests"
+    },
+    {
+      "id": "CMN-REQ-SEC-002",
+      "implementation_target": "future_src_commnet",
+      "rationale": "Reduces accidental exposure during onboarding.",
+      "source_document": "CMN-REQ-MAT-001",
+      "statement": "Default setup shall be private, local-only, invisible, and non-sharing until the user explicitly changes it.",
+      "status": "READY_FOR_REVIEW",
+      "test_target": "future_tests_or_audit",
+      "verification": "future first-run tests"
+    },
+    {
+      "id": "CMN-REQ-SEC-003",
+      "implementation_target": "future_src_commnet",
+      "rationale": "Supports both home and school deployments with one model.",
+      "source_document": "CMN-REQ-MAT-001",
+      "statement": "Role definitions shall distinguish visitor, user, contributor, moderator, administrator, auditor, guardian, and maintainer capabilities.",
+      "status": "READY_FOR_REVIEW",
+      "test_target": "future_tests_or_audit",
+      "verification": "roles registry review"
+    },
+    {
+      "id": "CMN-REQ-SEC-004",
+      "implementation_target": "future_src_commnet",
+      "rationale": "Local deployments need practical recovery without creating easy compromise paths.",
+      "source_document": "CMN-REQ-MAT-001",
+      "statement": "The system shall support recovery from lost admin access without silently bypassing ownership rules.",
+      "status": "READY_FOR_REVIEW",
+      "test_target": "future_tests_or_audit",
+      "verification": "future recovery design review"
+    },
+    {
+      "id": "CMN-REQ-SEC-005",
+      "implementation_target": "future_src_commnet",
+      "rationale": "Reduces accidental exposure or lockout.",
+      "source_document": "CMN-REQ-MAT-001",
+      "statement": "High-impact actions shall require preview, confirmation, audit entry, and rollback path when practical.",
+      "status": "READY_FOR_REVIEW",
+      "test_target": "future_tests_or_audit",
+      "verification": "future UI and policy tests"
+    },
+    {
+      "id": "CMN-REQ-STORE-001",
+      "implementation_target": "future_src_commnet_transport",
+      "rationale": "Static and mobile caches are central to the community data-transfer concept.",
+      "source_document": "CMN-NET-SPEC-008",
+      "statement": "CommNet shall support custody-based store-and-forward bundles for storage nodes, phone caches, removable media, and future data-mule systems.",
+      "status": "READY_FOR_REVIEW",
+      "test_target": "future_tests_or_audit",
+      "verification": "storage/mule registry and spec review"
+    },
+    {
+      "id": "CMN-REQ-TRANS-001",
+      "implementation_target": "future_src_commnet_transport",
+      "rationale": "Prevents app logic from depending on one communication pathway.",
+      "source_document": "CMN-TRANS-SPEC-001",
+      "statement": "CommNet shall use a universal transport-adapter architecture.",
+      "status": "READY_FOR_IMPLEMENTATION",
+      "test_target": "future_tests_or_audit",
+      "verification": "transport registry and adapter API review"
+    },
+    {
+      "id": "CMN-REQ-TRANS-002",
+      "implementation_target": "future_src_commnet_transport",
+      "rationale": "Supports future Wi-Fi, Bluetooth, serial, storage, drone, and other pathways.",
+      "source_document": "CMN-TRANS-SPEC-001",
+      "statement": "CommNet shall allow new transport adapters without modifying application-layer community tools.",
+      "status": "READY_FOR_REVIEW",
+      "test_target": "future_tests_or_audit",
+      "verification": "adapter architecture review"
+    },
+    {
+      "id": "CMN-REQ-TRANS-003",
+      "implementation_target": "future_src_commnet_transport",
+      "rationale": "Different payloads have different bandwidth, privacy, urgency, and latency needs.",
+      "source_document": "CMN-TRANS-SPEC-004",
+      "statement": "CommNet shall classify all outbound payloads before route selection.",
+      "status": "READY_FOR_REVIEW",
+      "test_target": "future_tests_or_audit",
+      "verification": "payload class registry audit"
+    },
+    {
+      "id": "CMN-REQ-TRANS-004",
+      "implementation_target": "future_src_commnet_transport",
+      "rationale": "Route decisions must be explainable and auditable.",
+      "source_document": "CMN-TRANS-SPEC-002",
+      "statement": "CommNet shall use deterministic route planning based on policy, urgency, privacy, payload size, latency, reliability, and available adapters.",
+      "status": "READY_FOR_REVIEW",
+      "test_target": "future_tests_or_audit",
+      "verification": "route policy audit"
+    },
+    {
+      "id": "CMN-REQ-TRANS-005",
+      "implementation_target": "future_src_commnet_transport",
+      "rationale": "Maximizes delivery effort without resource exhaustion.",
+      "source_document": "CMN-TRANS-SPEC-003",
+      "statement": "CommNet shall use bounded queues, bounded retries, bounded worker threads, timeouts, rate limits, and circuit breakers.",
+      "status": "READY_FOR_IMPLEMENTATION",
+      "test_target": "future_tests_or_audit",
+      "verification": "resource limits audit"
+    },
+    {
+      "id": "CMN-REQ-TRANS-006",
+      "implementation_target": "future_src_commnet_transport",
+      "rationale": "Supports store-and-forward communication.",
+      "source_document": "CMN-TRANS-SPEC-002",
+      "statement": "CommNet shall persist undeliverable messages for deferred delivery when policy allows.",
+      "status": "READY_FOR_REVIEW",
+      "test_target": "future_tests_or_audit",
+      "verification": "future queue tests and route policy review"
+    },
+    {
+      "id": "CMN-REQ-TRANS-007",
+      "implementation_target": "future_src_commnet_transport",
+      "rationale": "Supports diagnostics and accountability.",
+      "source_document": "CMN-DIAG-SPEC-001",
+      "statement": "CommNet shall audit route decisions, delivery attempts, failures, deferrals, drops, and successful deliveries.",
+      "status": "READY_FOR_REVIEW",
+      "test_target": "future_tests_or_audit",
+      "verification": "diagnostics spec review"
+    },
+    {
+      "id": "CMN-REQ-UI-001",
+      "implementation_target": "future_src_commnet",
+      "rationale": "Users starting from a flash drive need a clear next step.",
+      "source_document": "CMN-REQ-MAT-001",
+      "statement": "CommNet shall provide one obvious first-run entry point.",
+      "status": "READY_FOR_REVIEW",
+      "test_target": "future_tests_or_audit",
+      "verification": "future launcher tests"
+    },
+    {
+      "id": "CMN-REQ-UI-002",
+      "implementation_target": "future_src_commnet",
+      "rationale": "Home and school deployments need shared behavior with different defaults.",
+      "source_document": "CMN-REQ-MAT-001",
+      "statement": "Configuration tools shall share one common policy engine and differ by profile, not by incompatible implementations.",
+      "status": "READY_FOR_REVIEW",
+      "test_target": "future_tests_or_audit",
+      "verification": "future architecture tests"
+    },
+    {
+      "id": "CMN-REQ-UI-003",
+      "implementation_target": "future_src_commnet",
+      "rationale": "Powerful controls must not overwhelm first-time users.",
+      "source_document": "CMN-REQ-MAT-001",
+      "statement": "The admin configuration platform shall support novice and advanced modes.",
+      "status": "READY_FOR_REVIEW",
+      "test_target": "future_tests_or_audit",
+      "verification": "future UX review"
+    },
+    {
+      "id": "CMN-REQ-UI-004",
+      "implementation_target": "future_src_commnet",
+      "rationale": "Reduces dangerous configuration mistakes.",
+      "source_document": "CMN-REQ-MAT-001",
+      "statement": "The UI shall expose policy consequences before applying privacy, sharing, gateway, and role changes.",
+      "status": "READY_FOR_REVIEW",
+      "test_target": "future_tests_or_audit",
+      "verification": "future policy simulator tests"
+    },
+    {
+      "id": "CMN-REQ-UI-005",
+      "implementation_target": "future_src_commnet",
+      "rationale": "Carries forward proven project UI expectations.",
+      "source_document": "CMN-REQ-MAT-001",
+      "statement": "The UI design shall support dockable panels, persistent status, settings persistence, diagnostic export, and logs.",
+      "status": "READY_FOR_REVIEW",
+      "test_target": "future_tests_or_audit",
+      "verification": "future UI acceptance tests"
+    },
+    {
+      "id": "CMN-REQ-UI-006",
+      "implementation_target": "future_src_commnet",
+      "rationale": "Browsing and configuration are different risk modes.",
+      "source_document": "CMN-REQ-MAT-001",
+      "statement": "The community web portal and admin console shall be separate entry points.",
+      "status": "READY_FOR_REVIEW",
+      "test_target": "future_tests_or_audit",
+      "verification": "future launcher tests"
+    },
+    {
+      "id": "CMN-REQ-SHELL-001",
+      "statement": "CommNet shall launch a local server with Python standard-library components in the shell package.",
+      "status": "IMPLEMENTED_IN_SHELL",
+      "verification": "smoke_test_and_audit"
+    },
+    {
+      "id": "CMN-REQ-SHELL-002",
+      "statement": "CommNet shall bind to 127.0.0.1 by default for this local demonstrator.",
+      "status": "IMPLEMENTED_IN_SHELL",
+      "verification": "smoke_test_and_audit"
+    },
+    {
+      "id": "CMN-REQ-LAUNCH-001",
+      "statement": "Launchers shall use relative paths and Python discovery rather than hard-coded install paths.",
+      "status": "IMPLEMENTED_IN_SHELL",
+      "verification": "smoke_test_and_audit"
+    },
+    {
+      "id": "CMN-REQ-DIAG-002",
+      "statement": "Shell diagnostics shall report runtime, SQLite, package, and transport skeleton status.",
+      "status": "IMPLEMENTED_IN_SHELL",
+      "verification": "smoke_test_and_audit"
+    },
+    {
+      "id": "CMN-REQ-TRANS-013",
+      "statement": "The shell package shall include the universal transport skeleton and a functional loopback adapter.",
+      "status": "IMPLEMENTED_IN_SHELL",
+      "verification": "smoke_test_and_audit"
+    },
+    {
+      "id": "CMN-REQ-CONFIG-001",
+      "source_document": "CMN-CONFIG-SPEC-002",
+      "statement": "CommNet shall provide a browser-based first-run setup wizard.",
+      "status": "IMPLEMENTED_IN_CONFIG_RUN",
+      "verification": "smoke_and_audit"
+    },
+    {
+      "id": "CMN-REQ-CONFIG-002",
+      "source_document": "CMN-CONFIG-SPEC-001",
+      "statement": "CommNet shall persist node configuration in SQLite-compatible runtime state and JSON snapshots.",
+      "status": "IMPLEMENTED_IN_CONFIG_RUN",
+      "verification": "smoke_and_audit"
+    },
+    {
+      "id": "CMN-REQ-CONFIG-003",
+      "source_document": "CMN-CONFIG-SPEC-004",
+      "statement": "CommNet shall validate all user-editable configuration fields.",
+      "status": "IMPLEMENTED_IN_CONFIG_RUN",
+      "verification": "smoke_and_audit"
+    },
+    {
+      "id": "CMN-REQ-CONFIG-004",
+      "source_document": "CMN-CONFIG-SPEC-003",
+      "statement": "CommNet shall provide rollback to prior configuration snapshots.",
+      "status": "IMPLEMENTED_IN_CONFIG_RUN",
+      "verification": "smoke_and_audit"
+    },
+    {
+      "id": "CMN-REQ-CONFIG-005",
+      "source_document": "CMN-CONFIG-SPEC-003",
+      "statement": "CommNet shall export and import configuration JSON.",
+      "status": "IMPLEMENTED_IN_CONFIG_RUN",
+      "verification": "smoke_and_audit"
+    },
+    {
+      "id": "CMN-REQ-PRIV-001",
+      "source_document": "CMN-POLICY-SPEC-001",
+      "statement": "CommNet shall default to private/local-only visibility.",
+      "status": "IMPLEMENTED_IN_CONFIG_RUN",
+      "verification": "smoke_and_audit"
+    },
+    {
+      "id": "CMN-REQ-PRIV-002",
+      "source_document": "CMN-POLICY-SPEC-001",
+      "statement": "CommNet shall show current visibility state in admin and portal interfaces.",
+      "status": "IMPLEMENTED_IN_CONFIG_RUN",
+      "verification": "smoke_and_audit"
+    },
+    {
+      "id": "CMN-REQ-SVC-001",
+      "source_document": "CMN-POLICY-SPEC-002",
+      "statement": "CommNet shall allow services to be enabled or disabled from the admin UI.",
+      "status": "IMPLEMENTED_IN_CONFIG_RUN",
+      "verification": "smoke_and_audit"
+    },
+    {
+      "id": "CMN-REQ-SVC-002",
+      "source_document": "CMN-POLICY-SPEC-002",
+      "statement": "CommNet shall hide disabled services from the portal.",
+      "status": "IMPLEMENTED_IN_CONFIG_RUN",
+      "verification": "smoke_and_audit"
+    },
+    {
+      "id": "CMN-REQ-DEV-001",
+      "source_document": "CMN-DEVICE-SPEC-001",
+      "statement": "CommNet shall provide manual device registry management before automatic discovery is implemented.",
+      "status": "IMPLEMENTED_IN_CONFIG_RUN",
+      "verification": "smoke_and_audit"
+    },
+    {
+      "id": "CMN-REQ-FILE-001",
+      "source_document": "CMN-FILES-SPEC-001",
+      "statement": "CommNet shall allow users to define file registry roots without automatically publishing files.",
+      "status": "IMPLEMENTED_IN_CONFIG_RUN",
+      "verification": "smoke_and_audit"
+    },
+    {
+      "id": "CMN-REQ-DOC-001",
+      "source_document": "CMN-AUD-SPEC-004",
+      "statement": "CommNet package generation shall audit that prior active documentation has not disappeared.",
+      "status": "IMPLEMENTED_IN_CONFIG_RUN",
+      "verification": "smoke_and_audit"
+    },
+    {
+      "id": "CMN-REQ-NET-001",
+      "statement": "CommNet shall provide a browser-accessible network dashboard.",
+      "status": "IMPLEMENTED_DEMO"
+    },
+    {
+      "id": "CMN-REQ-NET-002",
+      "statement": "CommNet shall support manual peer registration before automatic discovery is implemented.",
+      "status": "IMPLEMENTED_DEMO"
+    },
+    {
+      "id": "CMN-REQ-NET-003",
+      "statement": "CommNet shall provide a LAN HTTP handshake endpoint for reachable CommNet peers.",
+      "status": "IMPLEMENTED_DEMO"
+    },
+    {
+      "id": "CMN-REQ-NET-004",
+      "statement": "CommNet shall default inbound peer communication to disabled unless explicitly enabled.",
+      "status": "IMPLEMENTED_DEMO"
+    },
+    {
+      "id": "CMN-REQ-TRANS-014",
+      "statement": "CommNet shall provide bounded message queue and retry-limit defaults.",
+      "status": "IMPLEMENTED_DEMO"
+    },
+    {
+      "id": "CMN-REQ-TRANS-015",
+      "statement": "CommNet shall provide deterministic route-decision reports.",
+      "status": "IMPLEMENTED_DEMO"
+    },
+    {
+      "id": "CMN-REQ-TRANS-016",
+      "statement": "CommNet shall implement local loopback delivery.",
+      "status": "IMPLEMENTED_DEMO"
+    },
+    {
+      "id": "CMN-REQ-TRANS-017",
+      "statement": "CommNet shall implement LAN HTTP test-message delivery to manually configured reachable peers.",
+      "status": "IMPLEMENTED_DEMO"
+    },
+    {
+      "id": "CMN-REQ-DEP-001",
+      "statement": "CommNet shall detect optional transport dependencies without requiring them for startup.",
+      "status": "IMPLEMENTED_DEMO"
+    },
+    {
+      "id": "CMN-REQ-DEP-002",
+      "statement": "CommNet shall show missing transport dependencies in admin diagnostics.",
+      "status": "IMPLEMENTED_DEMO"
+    },
+    {
+      "id": "CMN-REQ-AUD-DEL-001",
+      "statement": "CommNet shall audit route decisions and delivery attempts.",
+      "status": "IMPLEMENTED_DEMO"
+    },
+    {
+      "id": "CMN-REQ-NETPATH-001",
+      "statement": "CommNet shall detect and list available network paths/interfaces.",
+      "status": "READY_FOR_IMPLEMENTATION",
+      "verification": "smoke/audit"
+    },
+    {
+      "id": "CMN-REQ-NETPATH-002",
+      "statement": "CommNet shall classify APIPA/self-assigned 169.254.x.x addresses as invalid for normal visitor links.",
+      "status": "READY_FOR_IMPLEMENTATION",
+      "verification": "smoke/audit"
+    },
+    {
+      "id": "CMN-REQ-NETPATH-003",
+      "statement": "CommNet shall let the user select the network path used for visitor links, share links, peer invites, and LAN setup guidance.",
+      "status": "READY_FOR_IMPLEMENTATION",
+      "verification": "smoke/audit"
+    },
+    {
+      "id": "CMN-REQ-LINK-002",
+      "statement": "CommNet shall generate copyable links only from the selected valid network path unless explicitly overridden.",
+      "status": "READY_FOR_IMPLEMENTATION",
+      "verification": "smoke/audit"
+    },
+    {
+      "id": "CMN-REQ-HW-004",
+      "statement": "CommNet shall provide a real Catena USB serial adapter using pyserial when available.",
+      "status": "READY_FOR_IMPLEMENTATION",
+      "verification": "smoke/audit"
+    },
+    {
+      "id": "CMN-REQ-HW-008",
+      "statement": "CommNet shall distinguish local hardware ACK from remote RF delivery.",
+      "status": "READY_FOR_IMPLEMENTATION",
+      "verification": "smoke/audit"
+    }
+  ]
+}

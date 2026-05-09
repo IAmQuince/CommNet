@@ -1,0 +1,7 @@
+{
+  "accepted": "local hardware accepted command",
+  "tx_started": "local RF transmit started",
+  "tx_done": "local RF transmit completed",
+  "RX": "inbound RF evidence",
+  "REMOTE_ACK": "remote delivery confirmed"
+}

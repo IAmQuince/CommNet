@@ -1,0 +1,22 @@
+{
+  "package_class": "USABILITY_HUD_READY_WITH_DEBT",
+  "scope": "local_sqlite_internal_mail_only",
+  "tables": [
+    "mail_messages",
+    "mail_recipients"
+  ],
+  "features": [
+    "inbox",
+    "sent",
+    "compose",
+    "mail_to_admin",
+    "admin_broadcast"
+  ],
+  "deferred": [
+    "smtp",
+    "internet_email",
+    "attachments",
+    "cross_node_relay",
+    "encrypted_mailbox_claims"
+  ]
+}

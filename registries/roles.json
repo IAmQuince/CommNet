@@ -1,0 +1,37 @@
+{
+  "schema": "cmn.roles.v0",
+  "roles": [
+    {
+      "role_id": "anonymous_visitor",
+      "description": "Browse explicitly public-local resources when allowed."
+    },
+    {
+      "role_id": "registered_user",
+      "description": "Use local portal under assigned profile."
+    },
+    {
+      "role_id": "trusted_contributor",
+      "description": "Submit content or metadata for review."
+    },
+    {
+      "role_id": "moderator",
+      "description": "Review, restrict, and label content under policy."
+    },
+    {
+      "role_id": "administrator",
+      "description": "Configure services, roles, privacy, and sharing."
+    },
+    {
+      "role_id": "auditor_reviewer",
+      "description": "Review logs and evidence without broad content-control authority."
+    },
+    {
+      "role_id": "guardian_teacher",
+      "description": "Apply dependent/student/household rules where applicable."
+    },
+    {
+      "role_id": "system_maintainer",
+      "description": "Maintain software, packages, backups, and diagnostics."
+    }
+  ]
+}

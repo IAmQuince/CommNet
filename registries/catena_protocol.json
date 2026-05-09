@@ -1,0 +1,21 @@
+{
+  "ack_semantics": "local hardware ACK only",
+  "commands": [
+    "PING",
+    "ID?",
+    "STATUS?",
+    "CFG",
+    "TX"
+  ],
+  "line_ending": "\\n",
+  "prefix": "CMN1",
+  "responses": [
+    "PONG",
+    "ID",
+    "STATUS",
+    "ACK",
+    "ERR",
+    "RX",
+    "REMOTE_ACK"
+  ]
+}

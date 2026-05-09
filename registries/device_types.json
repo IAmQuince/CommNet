@@ -1,0 +1,21 @@
+{
+  "device_types": [
+    "windows_pc",
+    "phone",
+    "raspberry_pi",
+    "meshtastic_radio",
+    "lora_microcontroller",
+    "router",
+    "nas",
+    "storage_node",
+    "bluetooth_device",
+    "unknown"
+  ],
+  "trust_states": [
+    "untrusted",
+    "known",
+    "trusted",
+    "blocked",
+    "owner_device"
+  ]
+}

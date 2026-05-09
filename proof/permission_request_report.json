@@ -1,0 +1,13 @@
+{
+  "checks": {
+    "grant_created": true,
+    "pending_visible": true,
+    "request_created": true,
+    "user_has_grant": true
+  },
+  "extra": {
+    "request_id": "req_c704786bad7c",
+    "user_id": "user_1766312bee71"
+  },
+  "status": "PASS"
+}

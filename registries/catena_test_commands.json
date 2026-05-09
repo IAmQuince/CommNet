@@ -1,0 +1,11 @@
+{
+  "baud": 115200,
+  "line_ending": "newline",
+  "commands": [
+    "CMN1|PING|nonce=12345",
+    "CMN1|ID?",
+    "CMN1|STATUS?",
+    "CMN1|CFG|profile=us915_test|sf=7|bw=125|cr=45|txp=10",
+    "CMN1|TX|id=msg_002|class=text_message|to=broadcast|body=SGVsbG8"
+  ]
+}

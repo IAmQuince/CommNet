@@ -1,0 +1,11 @@
+{
+  "safe_local_first": {
+    "bind_default": "127.0.0.1",
+    "inbound_peer_messages_default": false,
+    "manual_peers": true
+  },
+  "lan_test": {
+    "requires_explicit_user_action": true,
+    "warning": "LAN exposure can make the local server reachable by nearby devices."
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "schema": "cmn.permissions.v0",
+  "actions": [
+    "discover",
+    "open",
+    "copy",
+    "edit_metadata",
+    "submit_review",
+    "moderate",
+    "publish",
+    "replicate",
+    "delete_local",
+    "purge_cache",
+    "change_policy",
+    "enable_gateway",
+    "export_support_bundle"
+  ],
+  "rule": "Future policy engine must evaluate actor, role, target, context, visibility, review_state, and deployment profile."
+}

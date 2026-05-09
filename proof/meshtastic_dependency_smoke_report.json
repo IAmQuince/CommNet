@@ -1,0 +1,32 @@
+{
+  "checks": {
+    "dependency_check_returns_state": true,
+    "latest_status_returns_state": true,
+    "ports_check_returns_list": true
+  },
+  "extra": {
+    "dependency": {
+      "meshtastic_installed": false,
+      "meshtastic_version": "",
+      "pubsub_installed": false,
+      "pyserial_installed": false,
+      "pyserial_version": "",
+      "state": "missing_dependency"
+    },
+    "latest": {
+      "last_checked": "2026-05-09 04:30:55",
+      "last_error": "",
+      "last_event": "fake_smoke",
+      "nodes_seen": 0,
+      "state": "simulated_sent"
+    },
+    "ports": [
+      {
+        "description": "pyserial list_ports unavailable",
+        "device": "",
+        "hwid": "No module named 'serial'"
+      }
+    ]
+  },
+  "status": "PASS"
+}

@@ -1,0 +1,11 @@
+{
+  "catena_serial_lora": {
+    "status": "fake_serial_working_real_serial_configurable"
+  },
+  "lan_timeout_sec": 2,
+  "low_bandwidth_large_file_rule": "manifest/control only",
+  "max_adapter_queue_depth": 100,
+  "max_delivery_retries": 3,
+  "max_global_queue_depth": 1000,
+  "netux_catena_added": true
+}

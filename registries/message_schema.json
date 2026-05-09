@@ -1,0 +1,16 @@
+{
+  "required": [
+    "message_id",
+    "payload_class",
+    "priority",
+    "privacy_class",
+    "status"
+  ],
+  "payload_classes": [
+    "text_message",
+    "emergency_alert",
+    "directory_update",
+    "device_status",
+    "route_probe"
+  ]
+}

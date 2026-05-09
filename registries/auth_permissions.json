@@ -1,0 +1,24 @@
+{
+  "package_class": "USABILITY_HUD_READY_WITH_DEBT",
+  "roles": [
+    "owner",
+    "admin",
+    "trusted_user",
+    "user",
+    "guest",
+    "retroweb_user",
+    "suspended"
+  ],
+  "permission_examples": [
+    "admin.*",
+    "mail.use",
+    "mail.admin",
+    "portal.retroweb.view",
+    "portal.bbs.view",
+    "portal.emergency.view",
+    "share.<share_id>.list",
+    "share.<share_id>.preview",
+    "share.<share_id>.download",
+    "share.<share_id>.upload"
+  ]
+}

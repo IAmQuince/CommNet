@@ -1,0 +1,11 @@
+{
+  "checks": {
+    "bbs_theme_dark": true,
+    "portal_theme_dark": true,
+    "retroweb_theme_dark": true,
+    "server_ready": true,
+    "settings_post_redirects": true
+  },
+  "extra": {},
+  "status": "PASS"
+}

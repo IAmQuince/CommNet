@@ -1,0 +1,29 @@
+{
+  "checks": {
+    "event_recorded": true,
+    "fake_probe_ok": true,
+    "fake_send_ok": true
+  },
+  "extra": {
+    "latest": {
+      "last_checked": "2026-05-09 04:32:49",
+      "last_error": "",
+      "last_event": "fake_smoke",
+      "nodes_seen": 0,
+      "state": "simulated_sent"
+    },
+    "probe": {
+      "nodes_seen": 2,
+      "note": "fake Meshtastic smoke adapter",
+      "ok": true,
+      "state": "simulated"
+    },
+    "sent": {
+      "destination_id": "^all",
+      "ok": true,
+      "state": "simulated_sent",
+      "text_preview": "CMN1|PING|fake=1"
+    }
+  },
+  "status": "PASS"
+}

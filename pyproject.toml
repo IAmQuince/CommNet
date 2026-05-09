@@ -1,0 +1,10 @@
+[project]
+name = "commnet-config"
+version = "0.0.3"
+description = "CommNet local configuration package"
+requires-python = ">=3.10"
+
+[tool.commnet]
+package = "20260508_10_CommNetPortalPolish"
+status = "PORTAL_POLISH_READY_WITH_DEBT"
+external_runtime_dependencies = []

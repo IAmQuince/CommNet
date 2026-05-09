@@ -1,0 +1,27 @@
+{
+  "checks": {
+    "explicit_state": true,
+    "serial_ports_list": true,
+    "status_dict": true
+  },
+  "extra": {
+    "catena_status": {
+      "adapter_id": "catena_serial_lora",
+      "available": true,
+      "baud": 115200,
+      "delivery_semantics": "ACK means local hardware accepted command; remote RF delivery requires RX/REMOTE_ACK.",
+      "dependency": {
+        "import_name": "serial",
+        "installed": false,
+        "package": "pyserial",
+        "required_for_real_hardware": true
+      },
+      "display_name": "Catena USB Serial LoRa",
+      "mode": "fake",
+      "port": ""
+    },
+    "port_count": 1,
+    "state": "simulated"
+  },
+  "status": "PASS"
+}

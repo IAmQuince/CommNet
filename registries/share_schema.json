@@ -1,0 +1,12 @@
+{
+  "share_roots": [
+    "share_id",
+    "label",
+    "root_path",
+    "virtual_name",
+    "visibility_mode",
+    "permission_profile",
+    "enabled",
+    "require_access_code"
+  ]
+}

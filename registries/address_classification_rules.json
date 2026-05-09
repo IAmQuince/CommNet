@@ -1,0 +1,16 @@
+{
+  "recommended": [
+    "private IPv4 address with gateway/router"
+  ],
+  "warning": [
+    "private IPv4 without gateway",
+    "public-looking address",
+    "virtual/VPN/unknown adapter"
+  ],
+  "invalid": [
+    "169.254.x.x APIPA",
+    "127.x.x.x loopback",
+    "media disconnected",
+    "no IPv4 address"
+  ]
+}

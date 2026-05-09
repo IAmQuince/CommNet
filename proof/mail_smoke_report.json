@@ -1,0 +1,13 @@
+{
+  "checks": {
+    "inbox_seen": true,
+    "read_body": true,
+    "sent": true,
+    "unread_decrements": true,
+    "unread_initial": true
+  },
+  "extra": {
+    "message_id": "mail_284ef6161bbc"
+  },
+  "status": "PASS"
+}

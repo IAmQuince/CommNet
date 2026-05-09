@@ -1,0 +1,18 @@
+{
+  "schema": "cmn.audit_fields.v0",
+  "required_fields": [
+    "event_id",
+    "timestamp_utc",
+    "actor_id",
+    "actor_role",
+    "action",
+    "target_type",
+    "target_id",
+    "old_value_hash",
+    "new_value_hash",
+    "result",
+    "reason_code",
+    "source_tool",
+    "redaction_level"
+  ]
+}
