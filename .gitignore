@@ -81,3 +81,6 @@ env/
 .idea/
 .DS_Store
 Thumbs.db
+
+# Optional local clone of AI SOP reference package (not part of CommNet sources)
+AISOP/
